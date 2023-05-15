@@ -20,12 +20,12 @@
 - c++, unreal, DirectX
 
 ## Worked On Project
-<table width=100%>
-<tr>
-<td width>프로젝트 이름</td> <td>Slippery Guy</td> <td>Slippery Guy</td> 
+<table width="100%">
+<tr align="center">
+<td>프로젝트 이름</td> <td>Slippery Guy</td> <td>4인 2D Shooting</td> 
 </tr>
 <tr>
-<td>이미지</td><td></td><td></td>
+<td>이미지</td><td><Image src=Image/Jump.gif/></td><td><Image src=Image/NetworkShooting.gif/></td>
 </tr>
 <tr>
 <td>사용 기술</td><td>C#, Unity, Visual Studio</td><td>C#, Unity, Visual Studio</td>
