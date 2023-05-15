@@ -31,7 +31,6 @@
 ## Current learning
 ![c++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=black)
 ![unreal](https://img.shields.io/badge/Unreal-0E1128?style=flat-square&logo=unrealengine&logoColor=white)
-![DirectX](https://img.shields.io/badge/DirectX12-55AA33?style=flat-square&logo=uealengine&logoColor=white)
 
 
 ## Worked On Project
@@ -41,8 +40,8 @@
     <td>4인 2D Shooting</td> 
 </tr>
 <tr >
-    <td>이미지</td>
-    <td>이미지</td>
+    <td> <image src="Image/SlipperyMan.gif"/> </td>
+    <td> <image src="Image/NetworkShooting.gif"/></td>
 </tr>
 <tr >
     <td>Windows</td> 
@@ -54,8 +53,8 @@
 </tr>
 <tr >
     <td>
-        UnityGUI, Facepunch(SteamAPI), Cinemachine<br>
-        JsonUtility
+        UnityGUI, Facepunch(SteamAPI) <br>
+        Cinemachine, JsonUtility
     </td>
     <td>
         UnityGUI, UnityNetwork(HLAPI)
@@ -66,23 +65,52 @@
         - 플레이어, 오브젝트 상호작용 <br>
         - 그래픽, 사운드, 키 바인딩 UI 및 기능 구현 <br>
         - SteamAPI(Facepunch 라이브러리) 연동 <br>
-        - JsonUtility, Job System 이용, 저장시스템 구현 <br>
+        - JsonUtility, Job System 이용 저장시스템 구현 <br>
     </td>
     <td>
-        - 
+        - Unity GUI를 이용,Lobby, Game UI 설계 <br>
+        - Unity HLAPI 네트워크 시스템 이용한 네트워크 구현 <br>
+        - 플레이어 움직임, 상호작용 구현 <br>
+        - 적 오브젝트 설계 및 구현 <br>
     </td>
 </tr>
 <tr>
     <td>
-        <a href="">자세히 보기</a>
+        <a href="https://github.com/shehdrbs123/Dongs-Portfolio/tree/main/UnityProject/Slippery%20Man">자세히 보기</a>
     </td>
     <td>
-        <a href="">자세히 보기</a>
+        <a href="https://github.com/shehdrbs123/Dongs-Portfolio/tree/main/UnityProject/NetworkShooting">자세히 보기</a>
     </td>
 </tr>
 </table>
 
----
+<table width="50%">
+<tr >
+    <td>DoodleJump 모작</td> 
+</tr>
+<tr>
+    <td><image src="Image/Jumping.gif"/></td>
+</tr>
+<tr >
+    <td>Windows</td> 
+</tr>
+<tr >
+    <td>Java / Java AWT / Eclipse</td>
+</tr>
+<tr>
+    <td>
+        - UI 버튼 구현 <br>
+        - 상속을 이용해 4개의 발판 구현, 씬을 로드하여 사용할 발판 선택 가능 <br>
+        - 입력, 그리기, 충돌 분리하고 멀티스레딩을 활용하여 반응성 향상 <br>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="https://github.com/shehdrbs123/Dongs-Portfolio/tree/main/JavaProject/Jumping%20Higher">자세히 보기</a>
+    </td>
+</tr>
+</table>
+
 
 <br>
 
