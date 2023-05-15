@@ -3,50 +3,82 @@
 
 
 ## Contact me
-
-- E-mail : 
-- SNS : 
+[![이미지](https://img.shields.io/badge/shehdrbs123-03C75A?style=&logo=Naver&logoColor=black)](https://www.instagram.com/shehdrbs123/)
+[![이미지](https://img.shields.io/badge/shehdrbs123-E4405F?style=&logo=instagram&logoColor=white)](https://www.instagram.com/shehdrbs123/)
 
 ## Main Skills
-- C# Unity 
+ ![C&#35;](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=csharp&logoColor=#512BD4) ![Unity](https://img.shields.io/badge/Unity-gray?style=flat-square&logo=Unity&logoColor=black)
+
 
 
 ## Sub Skills
-- python, java, java swing,
+### Medium  
+![JAVA](https://img.shields.io/badge/JAVA-3776AB?style=flat-square&logo=java&logoColor=black)
+![markdown](https://img.shields.io/badge/Markdown-3776AB?style=flat-square&logo=markdown&logoColor=black)
 
 
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 
-## current learn About
-- c++, unreal, DirectX
+ ### Basic 
+![python](https://img.shields.io/badge/Python3-3776AB?style=flat-square&logo=Python&logoColor=black)
+![c](https://img.shields.io/badge/c-3776AB?style=flat-square&logo=c&logoColor=black)
+![JSON](https://img.shields.io/badge/JSON-000000?style=flat-square&logo=json&logoColor=white)
+![markdown](https://img.shields.io/badge/Markdown-000000?style=flat-square&logo=markdown&logoColor=white)
+
+![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat-square&logo=Windows&logoColor=black)
+
+
+## Current learning
+![c++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=black)
+![unreal](https://img.shields.io/badge/Unreal-0E1128?style=flat-square&logo=unrealengine&logoColor=white)
+![DirectX](https://img.shields.io/badge/DirectX12-55AA33?style=flat-square&logo=uealengine&logoColor=white)
+
 
 ## Worked On Project
 <table width="100%">
-<tr align="center">
-<td>프로젝트 이름</td> <td>Slippery Guy</td> <td>4인 2D Shooting</td> 
+<tr >
+    <td>Slippery Guy</td> 
+    <td>4인 2D Shooting</td> 
+</tr>
+<tr >
+    <td>이미지</td>
+    <td>이미지</td>
+</tr>
+<tr >
+    <td>Windows</td> 
+    <td>Windows / Android</td> 
+</tr>
+<tr >
+    <td>C# / Unity /  Visual Studio</td>
+    <td>C# / Unity / Visual Studio</td>
+</tr>
+<tr >
+    <td>
+        UnityGUI, Facepunch(SteamAPI), Cinemachine<br>
+        JsonUtility
+    </td>
+    <td>
+        UnityGUI, UnityNetwork(HLAPI)
+    </td>
 </tr>
 <tr>
-<td>이미지</td><td><Image src=Image/Jump.gif/></td><td><Image src=Image/NetworkShooting.gif/></td>
+    <td>
+        - 플레이어, 오브젝트 상호작용 <br>
+        - 그래픽, 사운드, 키 바인딩 UI 및 기능 구현 <br>
+        - SteamAPI(Facepunch 라이브러리) 연동 <br>
+        - JsonUtility, Job System 이용, 저장시스템 구현 <br>
+    </td>
+    <td>
+        - 
+    </td>
 </tr>
 <tr>
-<td>사용 기술</td><td>C#, Unity, Visual Studio</td><td>C#, Unity, Visual Studio</td>
-</tr>
-<tr>
-<td>역할 및 구현내용</td> <td> </td><td> </td>
-</tr>
-</table>
-
-<table width=100%>
-<tr>
-<td >프로젝트 이름</td> <td>Slippery Guy</td> <td>Slippery Guy</td> 
-</tr>
-<tr>
-<td>이미지</td><td></td><td></td>
-</tr>
-<tr>
-<td>사용 기술</td><td>C#, Unity, Visual Studio</td><td>C#, Unity, Visual Studio</td>
-</tr>
-<tr>
-<td>역할 및 구현내용</td> <td> </td><td> </td>
+    <td>
+        <a href="">자세히 보기</a>
+    </td>
+    <td>
+        <a href="">자세히 보기</a>
+    </td>
 </tr>
 </table>
 
