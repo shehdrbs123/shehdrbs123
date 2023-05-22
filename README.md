@@ -2,9 +2,12 @@
 ![header](https://capsule-render.vercel.app/api?type=slice&text=Hello&rotate=8&animation=fadeIn&fontAlign=70&fontAlignY=30&theme=radical&desc=Dong's%20Profile&descAlign=70)
 
 
+
 ## Contact me
 [![이미지](https://img.shields.io/badge/shehdrbs123-03C75A?style=&logo=Naver&logoColor=black)](https://www.instagram.com/shehdrbs123/)
 [![이미지](https://img.shields.io/badge/shehdrbs123-E4405F?style=&logo=instagram&logoColor=white)](https://www.instagram.com/shehdrbs123/)
+
+<br>
 
 ## Main Skills
  ![C&#35;](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=csharp&logoColor=#512BD4) ![Unity](https://img.shields.io/badge/Unity-gray?style=flat-square&logo=Unity&logoColor=black)
@@ -12,23 +15,22 @@
 
 
 ## Sub Skills
-### Medium  
-![JAVA](https://img.shields.io/badge/JAVA-3776AB?style=flat-square&logo=java&logoColor=black)
-![markdown](https://img.shields.io/badge/Markdown-3776AB?style=flat-square&logo=markdown&logoColor=black)
+### Langauge 
+![JAVA](https://img.shields.io/badge/JAVA-3776AB?style=flat-square&logo=java&logoColor=black) ![python](https://img.shields.io/badge/Python3-3776AB?style=flat-square&logo=Python&logoColor=black) ![c](https://img.shields.io/badge/c-3776AB?style=flat-square&logo=c&logoColor=black) 
 
 
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-
- ### Basic 
-![python](https://img.shields.io/badge/Python3-3776AB?style=flat-square&logo=Python&logoColor=black)
-![c](https://img.shields.io/badge/c-3776AB?style=flat-square&logo=c&logoColor=black)
-![JSON](https://img.shields.io/badge/JSON-000000?style=flat-square&logo=json&logoColor=white)
-![markdown](https://img.shields.io/badge/Markdown-000000?style=flat-square&logo=markdown&logoColor=white)
-
+### OS
+![Linux](https://img.shields.io/badge/CentOS%20Linux-262577?style=flat-square&logo=CentOs&logoColor=white)
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat-square&logo=Windows&logoColor=black)
 
+### Markup Language
+![JSON](https://img.shields.io/badge/JSON-000000?style=flat-square&logo=json&logoColor=white)
+![markdown](https://img.shields.io/badge/Markdown-3776AB?style=flat-square&logo=markdown&logoColor=black)
+![html](https://img.shields.io/badge/HTML-3776AB?style=flat-square&logo=html&logoColor=black)
 
-## Current learning
+<br>
+
+## Current Learning
 ![c++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=black)
 ![unreal](https://img.shields.io/badge/Unreal-0E1128?style=flat-square&logo=unrealengine&logoColor=white)
 
