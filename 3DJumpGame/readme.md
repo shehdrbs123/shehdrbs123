@@ -5,68 +5,29 @@
 
 </center>
 
-
-
 ## 개요 
-<table>
-<tr>
-  <td>
-    플랫포머 Jumping Game
-  </td>
-</tr>
-<tr >
-  <td>
-    Windows
-  </td>
-</tr>
-<tr >
-  <td>
-    2021.9 ~ 2022.3 (9개월/2명)
-  </td>
-</tr>
-<tr>
-  <td>
-    메인 프로그래머
-  </td>
-</tr>
-<tr>
-  <td>
-    플레이어 움직임, 상호작용 및 장애물 제작 <br>
-    JsonUtility를 통한 저장/로드 시스템 <br>
-    UGUI를 이용한 UI 구현 <br>
-    풋 스텝 사운드 재생 설계 <br>
-    카메라 이동, 지형물 투명화 처리 <br>
-    Timeline 시스템을 활용한 엔딩 시네마틱 영상 제작
-  </td>
-</tr>
-<tr>
-  <td>
-    Unity 사용 숙달 <br>
-    facepunch.steamworks 사용경험 <br>
-    Unity GUI 사용 및 숙달 <br>
-    JsonUtility를 이용 json 사용경험 <br>
-    저장 시스템의 프레임 최적화를 위한 비동기 프로그래밍 구현경험
-  </td>
-</tr>
-</table>
+- 플랫포머 점프 게임으로 맵의 다양한 장애물을 돌파하여 최종점에 오르면 되는게임
+- 플랫폼 : windows, android(예정)
+- 개발 기간 : 2021.9. ~ 2022.3.
+<br><br>
 
-## 동작 스크린 샷
+## 개발 내용
+- 주요개발 내용
+  - 플레이어 움직임, 상호작용
+  - JsonUtility를 통한 저장/로드 시스템
+  - UGUI를 이용한 UI 구현
+  - 풋 스텝 사운드 재생 설계
+  - 카메라 이동, 지형물 투명화 처리 
+  - 특수 장애물 제작
+  - Timeline 시스템을 활용한 엔딩 시네마틱 영상 제작
+- 기타 
+  - 인게임 시네마틱 영상 제작
+  - 플레이어 애니메이션
 
-<table>
-  <tr align="center">
-    <td>
-      사진
-    </td>
-    <td>
-      사진
-    </td>
-  </tr>
-  <tr align="center">
-    <td>
-      <image src=""/>
-    </td>
-    <td>
-      <image src=""/>
-    </td>
-  </tr>
-</table>
+
+## 성과
+- 출시 시장플랫폼인 Steamworks 기본적인 이해
+- 유니티의 UnityEditor 라이브러리 사용 경험
+- 유니티 충돌 시스템에 대한 재고 및 개선방안에 대한 고민을 하게된 계기가 됨
+- 파일 저장을 위한 Json 사용 경험
+- 프레임 최적화를 위한 Task 비동기 프로그래밍 구현경험
