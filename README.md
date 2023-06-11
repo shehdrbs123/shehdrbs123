@@ -59,6 +59,14 @@
 </tr>
 <tr>
     <td>
+        데모 프로그램 준비중
+    </td>
+    <td>
+        <a href="http://naver.me/xkqmTGfV">프로그램 다운로드</a>
+    </td>
+</tr>
+<tr>
+    <td>
         <a href="https://github.com/shehdrbs123/Dongs-Portfolio/tree/main/UnityProject/3DJumpGame">자세히 보기</a>
     </td>
     <td>
@@ -93,10 +101,20 @@
 </tr>
 <tr>
     <td>
+        <a href="http://naver.me/FuEHuPTv">프로그램 다운로드</a>
+    </td>
+</tr>
+<tr>
+    <td>
         <a href="https://github.com/shehdrbs123/Dongs-Portfolio/tree/main/JavaProject/Jumping%20Higher">자세히 보기</a>
     </td>
 </tr>
 </table>
+
+### Not game projects
+- [JAVA] [영어 단어 외우기 프로그램](https://github.com/shehdrbs123/Dongs-Portfolio/tree/main/JavaProject/EnglishStudy)
+
+<br>
 
 ## Skills
 ### Langauge
