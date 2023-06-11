@@ -67,41 +67,34 @@
 </tr>
 </table>
 
-<table>
+<table width="50%">
 <tr >
-    <td width="50%">DoodleJump 모작</td> 
-    <td width="50%"></td>
+    <td>DoodleJump 모작</td> 
 </tr>
 <tr>
     <td><image src="Image/Jumping.gif"/></td>
-    <td></td>
 
 </tr>
 <tr >
     <td>1인 프로젝트 / 2015</td>
-    <td></td>
 </tr>
 <tr >
     <td>Windows</td> 
-    <td></td>
 </tr>
 <tr >
     <td>Java / Java AWT / Eclipse</td>
-    <td></td>
 </tr>
 <tr>
     <td>
-        - 상속을 이용해 4개의 발판 구현, 씬을 로드하여 사용할 발판 선택 가능 <br>
-        - 입력, 그리기, 충돌 분리하고 멀티스레딩을 활용하여 반응성 향상 <br>
+        - 상속을 이용해 4개의 발판 구현 <br>
+        - 멀티스레딩을 활용하여 반응성 향상 <br>
         - UI 버튼 구현 <br>
     </td>
-    <td></td>
 </tr>
 <tr>
     <td>
         <a href="https://github.com/shehdrbs123/Dongs-Portfolio/tree/main/JavaProject/Jumping%20Higher">자세히 보기</a>
     </td>
-    <td></td>
 </tr>
 </table>
 
