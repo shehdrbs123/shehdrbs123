@@ -48,7 +48,7 @@
         - 카메라 이동, 지형물 투명화 처리<br>
         - 플레이어, 오브젝트 상호작용, 애니메이터 설계 <br>
         - 특수 장애물 설계/구현 ( 화살, 진자운동 발판, 밀어내기 발판) <br>
-        - 장애물 설계에 필요한 Gizmo GuideLine 구현
+        - 장애물 설계에 필요한 Gizmo GuideLine 구현 <br>
         - SteamAPI(Facepunch 라이브러리) 연동 <br>
         - Timeline 시스템을 활용, 엔딩 시네마틱 영상 제작
     </td>
@@ -62,7 +62,8 @@
 </tr>
 <tr>
     <td>
-        데모 프로그램 준비중
+        포트폴리오 전용으로 다시 빌드한 프로그램입니다.<br>
+        <a href="http://naver.me/Gvd5drJu">프로그램 다운로드</a>
     </td>
     <td>
         <a href="http://naver.me/xkqmTGfV">프로그램 다운로드</a>
