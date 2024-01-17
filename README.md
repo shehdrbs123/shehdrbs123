@@ -10,12 +10,12 @@
 
 <table>
 <tr >
-    <td width="50%"><H3> TodangTodang </H3></td> 
-    <td width="50%"><H3>SafeHouse </H3></td> 
+    <td width="50%">TodangTodang </td> 
+    <td width="50%">SafeHouse </td> 
 </tr>
 <tr >
-    <td> 이미지 </td>
-    <td> 이미지 </td>
+    <td><image src="Image/todangtodang2.gif"/> </td>
+    <td><image src="!https://prod-files-secure.s3.us-west-2.amazonaws.com/416a3fd2-4c79-4ffa-a804-98a6fd1c8f6a/da64c045-cc91-4760-be97-b149c9be86cb/%EC%A0%9C%EB%AA%A9_%EC%97%86%EB%8A%94_%EB%8F%99%EC%98%81%EC%83%81_-_Clipchamp%EB%A1%9C_%EC%A0%9C%EC%9E%91_(11).gif"/> </td>
 </tr>
 <tr >
     <td>Windows / Web / Android</td> 
@@ -57,11 +57,12 @@
 <tr>
     <td>
         프로그램 다운로드 <br>
-        - <a href="https://play.google.com/store/apps/details?id=com.twelveganzi.todangtodang&hl=ko-KR">안드로이드</a> <br>
-        - <a href="https://twelveganzi.itch.io/todangtodang">itch.io (WEB)</a>
+        <a href="https://play.google.com/store/apps/details?id=com.twelveganzi.todangtodang&hl=ko-KR">안드로이드</a> <br>
+        <a href="https://twelveganzi.itch.io/todangtodang">itch.io (WEB)</a>
     </td>
     <td>
-        <a href="https://github.com/shehdrbs123/SkilledUnityB11TeamProject/releases/tag/RELEASES">프로그램 다운로드</a>
+        프로그램 다운로드 <br>
+        <a href="https://github.com/shehdrbs123/SkilledUnityB11TeamProject/releases/tag/RELEASES"> PC</a>
     </td>
 </tr>
 <tr>
@@ -79,8 +80,8 @@
 
 <table>
 <tr >
-    <td width="50%"><H3> 사신을 찾아서 </H3></td> 
-    <td width="50%"><H3> Text RPG </H3></td> 
+    <td width="50%">사신을 찾아서 </td> 
+    <td width="50%">Text RPG </td> 
 </tr>
 <tr >
     <td> 이미지 </td>
