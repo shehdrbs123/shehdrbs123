@@ -15,7 +15,7 @@
 </tr>
 <tr >
     <td><image src="Image/todangtodang2.gif"/> </td>
-    <td><image src="!https://prod-files-secure.s3.us-west-2.amazonaws.com/416a3fd2-4c79-4ffa-a804-98a6fd1c8f6a/da64c045-cc91-4760-be97-b149c9be86cb/%EC%A0%9C%EB%AA%A9_%EC%97%86%EB%8A%94_%EB%8F%99%EC%98%81%EC%83%81_-_Clipchamp%EB%A1%9C_%EC%A0%9C%EC%9E%91_(11).gif"/> </td>
+    <td><image src="Image/SafeHouse.gif"/> </td>
 </tr>
 <tr >
     <td>Windows / Web / Android</td> 
@@ -39,19 +39,19 @@
 </tr>
 <tr>
     <td>
-        - SO 데이터 컨테이너 및 Save/Load/암호화/무결성검증 기능이<br>&nbsp;있는 DataManager 구현<br>
-        - 손님 생명주기 설계/상태머신을 이용한 손님 기능 구현<br>
-        - ScriptableObject, EditorScripting을 통한 손님 외관 설정 기능 개발<br>
+        - SO 데이터 컨테이너 및 Save/Load/암호화/무결성검증<br>&nbsp; 기능이 있는 DataManager 구현<br>
         - IMGUI를 이용해 빠른 테스트를 하기 위한 Cheater 개발<br>
-        - 크로스 플랫폼 빌드를 위한 전처리 및 빌드, 게시(Web, PC, 모바일)<br>
-        - 게임의 기획 분석을 위한 Firebase Analytics 연동<br>
+        - ScriptableObject, EditorScripting을 통한 손님 외관 설정 기능 개발<br>
+        - 크로스 플랫폼 빌드를 위한 전처리 및 빌드, 게시<br>&nbsp;(Web, PC, 모바일)<br>
+        - 손님 생명주기 설계/상태머신을 이용한 손님 기능구현<br>
+        - 게임의 기획 분석을 위한 Firebase Analytics연동<br>
     </td>
     <td>
-        - 방어시설 건설 시스템 구현 및 캐릭터 연동<br>
-        - 추상 클래스를 이용한 방어시설 5종(포탑, 미사일포탑, 투석기, 곡사포) 설계 및 구현<br>
-        - UIManager를 통한 UI 관리<br>
-        - ScriptableObject 및 인벤토리 시스템 연동한 제작 시스템 설계 및 구현<br>
-        - 발소리 시스템 구현<br>
+        - UIManager를 통한 UI 관리기능 및 제작시스템 구현<br>
+        - 추상클래스를 이용한 5종 방어시설, 무기 구현<br>
+        - Prefab 모습 Texture화 툴 개발<br>
+        - RenderTexture 활용한 미니맵 구현<br>
+        - New InputSystem을 이용한 플레이어 개발 <br>
     </td>
 </tr>
 <tr>
@@ -67,10 +67,12 @@
 </tr>
 <tr>
     <td>
-        자세히 보기
+        <a>팀 Github</a><br>
+        <a>개인 코드정리 github</a>
     </td>
     <td>
-        자세히 보기
+        <a>팀 Github</a><br>
+        <a>개인 코드정리 github</a>
     </td>
 </tr>
 </table>
@@ -84,8 +86,8 @@
     <td width="50%">Text RPG </td> 
 </tr>
 <tr >
-    <td> 이미지 </td>
-    <td> 이미지 </td>
+    <td> <image src="Image/"/>  </td>
+    <td> <image src="Image/TextRPG.gif"/>  </td>
 </tr>
 <tr >
     <td>Windows</td> 
@@ -129,13 +131,71 @@
 </tr>
 <tr>
     <td>
-        자세히 보기
+        <a>팀 Github</a><br>
+        <a>개인 코드정리 github</a>
     </td>
     <td>
-        자세히 보기
+        <a>팀 Github</a><br>
+        <a>개인 코드정리 github</a>
     </td>
 </tr>
 </table>
+
+<br>
+<br>
+
+<table>
+<tr >
+    <td width="50%"> RoyalBlade 모작 </td> 
+    <td width="50%"> </td> 
+</tr>
+<tr >
+    <td> <image src="Image/"/>  </td>
+    <td></td>
+</tr>
+<tr >
+    <td>Android</td> 
+    <td></td>
+</tr>
+<tr >
+    <td> 개인 / 2023.6.13 ~ 2023.6.15 (3일) </td>
+    <td></td> 
+</tr>
+<tr >
+    <td>C# / Unity 2022.3.8 / Unity 2022</td>
+    <td></td>
+</tr>
+<tr>
+    <td>
+        위에 떨어지는 벽돌과 같은 오브젝트들을 제거하며<br>
+        게임을 진행하는 RoyalBlade를 모작한 게임입니다.
+    </td>
+    <td>
+    </td>
+</tr>
+<tr>
+    <td>
+    </td>
+    <td>
+    </td>
+</tr>
+<tr>
+    <td>
+        프로그램 다운로드 <br>
+    </td>
+    <td>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a>팀 Github</a><br>
+        <a>개인 코드정리 github</a>
+    </td>
+    <td>
+    </td>
+</tr>
+</table>
+
 
 <br>
 <br>
@@ -206,10 +266,10 @@
 </tr>
 <tr>
     <td>
-        <a href="https://github.com/shehdrbs123/Dongs-Portfolio/tree/main/UnityProject/3DJumpGame">자세히 보기</a>
+        <a href="https://github.com/shehdrbs123/Dongs-Portfolio/tree/main/UnityProject/3DJumpGame">Github</a>
     </td>
     <td>
-        <a href="https://github.com/shehdrbs123/Dongs-Portfolio/tree/main/UnityProject/NetworkShooting">자세히 보기</a>
+        <a href="https://github.com/shehdrbs123/Dongs-Portfolio/tree/main/UnityProject/NetworkShooting">Github</a>
     </td>
 </tr>
 </table>
@@ -247,7 +307,7 @@
 </tr>
 <tr>
     <td>
-        <a href="https://github.com/shehdrbs123/Dongs-Portfolio/tree/main/JavaProject/Jumping%20Higher">자세히 보기</a>
+        <a href="https://github.com/shehdrbs123/Dongs-Portfolio/tree/main/JavaProject/Jumping%20Higher">Github</a>
     </td>
 </tr>
 </table>
