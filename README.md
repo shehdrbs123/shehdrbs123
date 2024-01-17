@@ -6,10 +6,144 @@
 [![이미지](https://img.shields.io/badge/shehdrbs123-03C75A?style=&logo=Naver&logoColor=black)](https://www.instagram.com/shehdrbs123/)
 [![이미지](https://img.shields.io/badge/shehdrbs123-E4405F?style=&logo=instagram&logoColor=white)](https://www.instagram.com/shehdrbs123/)
 
+## Work On Project
+
+<table>
+<tr >
+    <td width="50%"><H3> TodangTodang </H3></td> 
+    <td width="50%"><H3>SafeHouse </H3></td> 
+</tr>
+<tr >
+    <td> 이미지 </td>
+    <td> 이미지 </td>
+</tr>
+<tr >
+    <td>Windows / Web / Android</td> 
+    <td>Windows </td> 
+</tr>
+<tr >
+    <td> 4인 / 2023.10.23 ~ 2023.12.15 (54일) </td>
+    <td> 3인 / 2023.09.23 ~ 2023.10.03 (11일)</td>
+</tr>
+<tr >
+    <td>C# / Unity 2022.3.2f1 / Rider 2023.1.2</td>
+    <td>C# / Unity 2022.3.2f1 / Rider 2023.1.2</td>
+</tr>
+<tr>
+    <td>
+        오버쿡드의 게임방식에 재료를 구매, 경영하는 컨텐츠를 더해 만든 싱글 플레이 타이쿤 게임
+    </td>
+    <td>
+        생존과 채집 요소를 도입한 3D 타워 디펜스 게임
+    </td>
+</tr>
+<tr>
+    <td>
+        - SO 데이터 컨테이너 및 Save/Load/암호화/무결성검증 기능이<br>&nbsp;있는 DataManager 구현<br>
+        - 손님 생명주기 설계/상태머신을 이용한 손님 기능 구현<br>
+        - ScriptableObject, EditorScripting을 통한 손님 외관 설정 기능 개발<br>
+        - IMGUI를 이용해 빠른 테스트를 하기 위한 Cheater 개발<br>
+        - 크로스 플랫폼 빌드를 위한 전처리 및 빌드, 게시(Web, PC, 모바일)<br>
+        - 게임의 기획 분석을 위한 Firebase Analytics 연동<br>
+    </td>
+    <td>
+        - 방어시설 건설 시스템 구현 및 캐릭터 연동<br>
+        - 추상 클래스를 이용한 방어시설 5종(포탑, 미사일포탑, 투석기, 곡사포) 설계 및 구현<br>
+        - UIManager를 통한 UI 관리<br>
+        - ScriptableObject 및 인벤토리 시스템 연동한 제작 시스템 설계 및 구현<br>
+        - 발소리 시스템 구현<br>
+    </td>
+</tr>
+<tr>
+    <td>
+        프로그램 다운로드 <br>
+        - <a href="https://play.google.com/store/apps/details?id=com.twelveganzi.todangtodang&hl=ko-KR">안드로이드</a> <br>
+        - <a href="https://twelveganzi.itch.io/todangtodang">itch.io (WEB)</a>
+    </td>
+    <td>
+        <a href="https://github.com/shehdrbs123/SkilledUnityB11TeamProject/releases/tag/RELEASES">프로그램 다운로드</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        자세히 보기
+    </td>
+    <td>
+        자세히 보기
+    </td>
+</tr>
+</table>
+
+<br>
+<br>
+
+<table>
+<tr >
+    <td width="50%"><H3> 사신을 찾아서 </H3></td> 
+    <td width="50%"><H3> Text RPG </H3></td> 
+</tr>
+<tr >
+    <td> 이미지 </td>
+    <td> 이미지 </td>
+</tr>
+<tr >
+    <td>Windows</td> 
+    <td>Windows</td> 
+</tr>
+<tr >
+    <td> 5인 / 2023.09.08 ~ 2023.9.15 (8일) </td>
+    <td> 4인 / 2023.8.28 ~ 2023.9.1 (5일)</td>
+</tr>
+<tr >
+    <td>C# / Unity 2022.3.2f1 / Rider 2023.1.2</td>
+    <td>C# / Rider 2023.1.2</td>
+</tr>
+<tr>
+    <td>
+        벽돌 게임을 주제로 5개의 맵에서 각각의 보스의 특성, 패턴을 아이템과 컨트롤을 활용해 5개 스테이지를 모두 Clear 하는 게임
+    </td>
+    <td>
+        행동 선택형 TextRPG로, 숫자를 입력하여 행동을 선택하는 게임 <br>
+        캐릭터의 레벨업, 전직, 상점에서의 무기 구입, 던전 전리품들을 통해서<br>캐릭터를 성장<br>
+        던전 공략을 통해 캐릭터를 성장 시켜 던전의 최종 층을 정복하는 게임<br>
+    </td>
+</tr>
+<tr>
+    <td>
+        - 충돌 관련 기능 통합 및 Scriptable Object를 기능 형태로 활용<br>
+    </td>
+    <td>
+        - c# 리플랙션 이용한 파생 클래스 자동 등록<br>
+    </td>
+</tr>
+<tr>
+    <td>
+        프로그램 다운로드 <br>
+        - <a href="https://play.google.com/store/apps/details?id=com.twelveganzi.todangtodang&hl=ko-KR">안드로이드</a> <br>
+        - <a href="https://twelveganzi.itch.io/todangtodang">itch.io (WEB)</a>
+    </td>
+    <td>
+        <a href="https://github.com/shehdrbs123/SkilledUnityB11TeamProject/releases/tag/RELEASES">프로그램 다운로드</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        자세히 보기
+    </td>
+    <td>
+        자세히 보기
+    </td>
+</tr>
+</table>
+
+<br>
+<br>
+
+---
 
 <br>
 
-## Worked On Project
+## Old Project
 <table>
 <tr >
     <td width="50%">Slippery Guy</td> 
