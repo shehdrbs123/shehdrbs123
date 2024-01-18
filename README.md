@@ -68,11 +68,11 @@
 <tr>
     <td>
         <a>팀 Github</a><br>
-        <a>개인 코드정리 github</a>
+        <!-- <a>개인 코드정리 github</a> -->
     </td>
     <td>
         <a>팀 Github</a><br>
-        <a>개인 코드정리 github</a>
+        <!-- <a>개인 코드정리 github</a> -->
     </td>
 </tr>
 </table>
@@ -86,11 +86,11 @@
     <td width="50%">Text RPG </td> 
 </tr>
 <tr >
-    <td> <image src="Image/"/>  </td>
+    <td> <image src="Image/FindDeathMan.gif"/>  </td>
     <td> <image src="Image/TextRPG.gif"/>  </td>
 </tr>
 <tr >
-    <td>Windows</td> 
+    <td>Windows / Mobile</td> 
     <td>Windows</td> 
 </tr>
 <tr >
@@ -113,34 +113,38 @@
 </tr>
 <tr>
     <td>
-        - 충돌 관련 기능 통합 및 Scriptable Object를 기능 형태로 활용<br>
+        - ObjectPool 구현 및 적용<br>
+        - ScriptableObject을 기능으로 활용해 몬스터/아이템 제작<br>
+        - Layer Collision Matrix 충돌 필터링<br>
+        - 페이즈 시스템 보스 구현
     </td>
     <td>
-        - c# 리플랙션 이용한 파생 클래스 자동 등록<br>
+        - 게임 시스템 제작<br>
+        - CSV 형식의 데이터 파싱 및 처리<br>
+        - c# 리플렉션을 활용한 SceneManager<br>
     </td>
 </tr>
 <tr>
     <td>
         프로그램 다운로드 <br>
-        - <a href="https://play.google.com/store/apps/details?id=com.twelveganzi.todangtodang&hl=ko-KR">안드로이드</a> <br>
-        - <a href="https://twelveganzi.itch.io/todangtodang">itch.io (WEB)</a>
+        <a href="https://mybox.naver.com/#/my?resourceKey=c2hlaGRyYnMxMjN8MzQ3MjUyMzE2NjIyOTYwMjYzMnxEfDA">PC</a> <br>
     </td>
     <td>
-        <a href="https://github.com/shehdrbs123/SkilledUnityB11TeamProject/releases/tag/RELEASES">프로그램 다운로드</a>
     </td>
 </tr>
 <tr>
     <td>
-        <a>팀 Github</a><br>
-        <a>개인 코드정리 github</a>
+        <a href="https://github.com/shehdrbs123/TeamProjectB04">팀 Github</a><br>
+        <!-- <a href="">개인 코드정리 github</a> -->
     </td>
     <td>
-        <a>팀 Github</a><br>
-        <a>개인 코드정리 github</a>
+        <a href ="https://github.com/shehdrbs123/SpartaB06_RawMeat">팀 Github</a><br>
+        <!-- <a>개인 코드정리 github</a> -->
     </td>
 </tr>
 </table>
 
+<!--
 <br>
 <br>
 
@@ -162,7 +166,7 @@
     <td></td> 
 </tr>
 <tr >
-    <td>C# / Unity 2022.3.8 / Unity 2022</td>
+    <td>C# / Unity 2022.3.8f1 / Unity 2022</td>
     <td></td>
 </tr>
 <tr>
@@ -195,7 +199,7 @@
     </td>
 </tr>
 </table>
-
+-->
 
 <br>
 <br>
