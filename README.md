@@ -67,11 +67,11 @@
 </tr>
 <tr>
     <td>
-        <a>팀 Github</a><br>
+        <a href="https://github.com/TodangTodang/TodangTodangPublic">팀 Github</a><br>
         <!-- <a>개인 코드정리 github</a> -->
     </td>
     <td>
-        <a>팀 Github</a><br>
+        <a href="https://github.com/shehdrbs123/SkilledUnityB11TeamProject">팀 Github</a><br>
         <!-- <a>개인 코드정리 github</a> -->
     </td>
 </tr>
