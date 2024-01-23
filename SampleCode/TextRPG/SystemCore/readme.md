@@ -1,9 +1,9 @@
 # 🔎 SystemCore
+TextRPG의 게임 플로우를 구현한 코드입니다.
 
-
-
-
+<!--
 ![이미지]()
+-->
 
 <br>
 
@@ -11,8 +11,8 @@
 
 | Script명 | 설명 |
 |---|---|
-|[DialogTyper.cs](./DialogTyper.cs) | 대화기능을 수행할 때 한 글자 씩 뽑아주는 기능을 하는 클래스<br>시작 시 자동으로 Coroutine을 수행하며, Queue의 개수를 조건으로 대기하고<br>Queue에 데이터가 들어오면 자동으로 대화 기능을 수행합니다. |
-|[Scenario.cs](./Scenario.cs)|게임이 끝나고 엔딩 시의 대화 스크립트, DialogTyper가 적용된 스크립트 입니다.|
+|[GameCore.cs](./DialogTyper.cs) | 게임의 기본적인 데이터를 정의, 게임 초기화, 게임의 플로우 등 <br>게임의 전반적인 로직을 구현한 클래스 입니다.  |
+|[InputMemory.cs](./Scenario.cs)| 입력의 범위와 이전 입력값을 가지고 있는 입력 관리 클래스, <br> 게임 플로우에서 이 값을 확인해 게임의 플로우를 조정한다. |
 
 
 ## [⏮ 돌아가기](../../)

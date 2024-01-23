@@ -44,24 +44,6 @@ namespace BasicTeamProject
                 DataManager.Instance.Inventory.AddItem("작은회복약", 10);
                 DataManager.Instance.Inventory.AddItem("마나포션", 10);
                 _manager.FunctionList.Add("CreateUserScene");
-                //Console.WriteLine("보고 싶은 씬을 골라주세요");
-                //int i = 0;
-                //var pairs = SceneManager._scenes;
-
-                //foreach (var pair in pairs)
-                //{
-                //    Console.WriteLine($"{i} : {pair.Key}");
-                //    ++i;
-                //}
-
-                //int key;
-                //while (!TryGetKey(SceneManager._scenes.Count, out key))
-                //{
-                //    Console.WriteLine("잘못 입력하셨습니다");
-                //    Console.Write(">>");
-                //}
-
-                //FunctionList[0] = pairs.Values.ToList()[key];
             }
         }
 

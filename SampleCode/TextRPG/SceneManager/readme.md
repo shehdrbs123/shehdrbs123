@@ -1,5 +1,5 @@
 # 🔎 SceneManager
-
+게임의 메인 단위인 Scene과 Scene을 관리하는 SceneManager 클래스 코드입니다.
 
 
 
@@ -11,8 +11,11 @@
 
 | Script명 | 설명 |
 |---|---|
-|[DialogTyper.cs](./DialogTyper.cs) | 대화기능을 수행할 때 한 글자 씩 뽑아주는 기능을 하는 클래스<br>시작 시 자동으로 Coroutine을 수행하며, Queue의 개수를 조건으로 대기하고<br>Queue에 데이터가 들어오면 자동으로 대화 기능을 수행합니다. |
-|[Scenario.cs](./Scenario.cs)|게임이 끝나고 엔딩 시의 대화 스크립트, DialogTyper가 적용된 스크립트 입니다.|
+|[SceneManager.cs](./SceneManager.cs) | Scene의 정보를 Dictionary 형태로 보관하는 클래스 입니다. <br> C# 리플렉션을 활용해 Scene의 파생클래스를 가져오는 기능이 구현된 클래스입니다. |
+|[Scene.cs](./Scene.cs)| 컴포짓 패턴에 맞추어 구성된 부모 클래스로 다양한 파생클래스에서<br> 각 상황에 맞는 구현을 하도록 구성하여 일관된 Scene 구조를 구성하도록 돕는 클래스입니다. |
+|[MainScene.cs](./MainScene.cs)| 게임의 메인 화면을 보여주는 클래스 |
+|[BattleScene.cs](./BattleScene.cs)| 배틀 시작 화면을 보여주는 클래스 |
+|[InventoryScene.cs](./InventoryScene.cs)| 인벤토리의 화면을 보여주는 클래스 |
 
 
 ## [⏮ 돌아가기](../../)
