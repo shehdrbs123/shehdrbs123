@@ -12,7 +12,7 @@
 |---|
 |[데이터를 한번에 저장하는 DataManager](/SampleCode/TodangTodang/DataManager/)|
 |[DataManager 암호화/무결성 검증](https://github.com/shehdrbs123/shehdrbs123/blob/b6ccd7c1e914226b1b22654293d817e1baf86077/SampleCode/TodangTodang/DataManager/DataManager.cs#L349-L361)|
-|[빠른 테스트, 적용을 위한 IMGUI Cheater](/SampleCode/TodangTodang/Cheater/Cheater(#).cs)|
+|[빠른 테스트, 적용을 위한 IMGUI Cheater](/SampleCode/TodangTodang/Cheater/)|
 |[SO와 EditorScript를 활용한 손님 외관 설정](/SampleCode/TodangTodang/Customer/AppearanceEditorScript/)|
 |[상태머신을 이용한 손님](/SampleCode/TodangTodang/Customer/StateMachine/)|
 
