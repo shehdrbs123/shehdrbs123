@@ -243,17 +243,7 @@ public class Cheater : MonoBehaviour
             ListCopy<IngredientInfoData>(cloneInventory.IngredientDatas, _playerData.GetInventory().IngredientDatas);
             ListCopy<RecipeInfoData>(cloneInventory.RecipeInfoDatas, _playerData.GetInventory().RecipeInfoDatas);
             ListCopy<KitchenUtensilInfoData>(cloneInventory.KitchenUtensilInfoDatas, _playerData.GetInventory().KitchenUtensilInfoDatas);
-            // StoreDecorationInfoData[] StoreDecorationInfoDatas = _decoStoreData.GetAllStoreDecoData();
-            // Inventory actualInventory = _playerData.GetInventory();
-            // actualInventory.StoreDecorationDatas.Clear();
-            // for (int j = 0; j < StoreDecorationInfoDatas.Length; ++j)
-            // {
-            //     if (StoreDecorationInfoDatas[j].IsSoldOut)
-            //     {
-            //         actualInventory.StoreDecorationDatas.Add(StoreDecorationInfoDatas[i].DefaultData);
-            //         _decoStoreData.UpdateStoreDecoSoldOutState(j);
-            //     }
-            // }
+        
             _playerData.UpdatePlayerData();
             
             GameManager.Instance.ChangeState(day);

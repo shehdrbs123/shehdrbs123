@@ -74,7 +74,7 @@ public class DataManager : Singleton<DataManager>
 
         ScriptableObject[] datas = Resources.LoadAll<ScriptableObject>("ScriptableDatas");
 
-        foreach (var scriptableData in datas)
+        foreach (ScriptableObject scriptableData in datas)
         {
             AddDefaultData(scriptableData);
         }
@@ -86,8 +86,6 @@ public class DataManager : Singleton<DataManager>
 
         Dictionary<string, ScriptableObject> dic;
 
-        // EffectSO는 EffectSO의 통합관리의 필요로로 추가된 부분
-        // EffectSO로 저장하고 불러오는 부분으로 추가된 예외처리
         if (scriptableData is EffectSO)
         {
             Dictionary<string, ScriptableObject> effectDic;
@@ -242,9 +240,90 @@ public class DataManager : Singleton<DataManager>
                 Saving(jsonData, filePath);
             }
         }
-
     }
 
+    private string Loading(string path, out bool needEncrypt)
+    {
+        string data = string.Empty;
+        needEncrypt = false;
+        using (StreamReader sr = new StreamReader(path))
+        {
+            string encrypdata = sr.ReadToEnd();
+            // 추후에 버전 체크를 할 수 있게 변형할 수 있음.
+            if (encrypdata.StartsWith(Strings.SaveData.SAVE_VERSION))
+            {
+                string[] strIntegrityCheckSplit = encrypdata.Split("|");
+                // 문자열 분리 결과가 3이 아니면 데이터 변조
+                if (strIntegrityCheckSplit.Length != 3)
+                {
+                    isCorrupted = true;
+                    Debug.LogWarning("데이터의 이상");
+                    return string.Empty;
+                }
+                else
+                {
+                    string hashString = $"{strIntegrityCheckSplit[0]}|{strIntegrityCheckSplit[1]}";
+                    string sha256Data = GetSha256String(hashString);
+                    // 무결성 검사
+                    if (strIntegrityCheckSplit[2].CompareTo(sha256Data)== 0)
+                    {
+                        data = DecryptData(strIntegrityCheckSplit[1]);
+                    }
+                    else
+                    {
+                        isCorrupted = true;
+                        Debug.LogWarning("데이터의 이상");
+                        return string.Empty;
+                    }
+                }
+            }
+            // 구 버전 대응
+            else if (encrypdata.StartsWith("{"))
+            {
+                data = encrypdata;
+                needEncrypt = true;
+            }
+            // 위 두개가 해당이 없다면 데이터가 유효하지 않음
+            else
+            {
+                isCorrupted = true;
+                Debug.LogWarning("데이터의 이상");
+                return string.Empty;
+            }
+
+        }
+
+        return data;
+    }
+
+    private void Saving(string data, string path)
+    {
+        using (StreamWriter sr = new StreamWriter(path))
+        {
+            string encryptingData = EncryptData(data);
+            string versionAddedData = $"{Strings.SaveData.SAVE_VERSION}|{encryptingData}";
+            string hashString = GetSha256String(versionAddedData);
+            sr.Write($"{Strings.SaveData.SAVE_VERSION}|{encryptingData}|{hashString}");
+        }
+    }
+
+    private string GetSha256String(string data)
+    {
+        string hashString = string.Empty;
+        using (SHA256 sha256 = SHA256.Create())
+        {
+            StringBuilder sb = new StringBuilder(256);
+            byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(data));
+            for (int i = 0; i < bytes.Length; ++i)
+            {
+                sb.Append(bytes[i].ToString("x2"));
+            }
+            hashString = sb.ToString();
+        }
+
+        return hashString;
+    }
+    
     private void GetDefaultData<T>(Type dataType, out T data) where T : Savable
     {
         data = null;
@@ -296,88 +375,7 @@ public class DataManager : Singleton<DataManager>
         }
 
         return data;
-    }
-
-    private string GetSha256String(string data)
-    {
-        string hashString = string.Empty;
-        using (SHA256 sha256 = SHA256.Create())
-        {
-            StringBuilder sb = new StringBuilder(256);
-            byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(data));
-            for (int i = 0; i < bytes.Length; ++i)
-            {
-                sb.Append(bytes[i].ToString("x2"));
-            }
-            hashString = sb.ToString();
-        }
-
-        return hashString;
-    }
-
-    private void Saving(string data, string path)
-    {
-        using (StreamWriter sr = new StreamWriter(path))
-        {
-            string encryptingData = EncryptData(data);
-            string versionAddedData = $"{Strings.SaveData.SAVE_VERSION}|{encryptingData}";
-            string hashString = GetSha256String(versionAddedData);
-            sr.Write($"{Strings.SaveData.SAVE_VERSION}|{encryptingData}|{hashString}");
-        }
-    }
-
-    private string Loading(string path, out bool needEncrypt)
-    {
-        string data = string.Empty;
-        needEncrypt = false;
-        using (StreamReader sr = new StreamReader(path))
-        {
-            string encrypdata = sr.ReadToEnd();
-            // 추후에 버전 체크를 할 수 있게 변형할 수 있음.
-            if (encrypdata.StartsWith(Strings.SaveData.SAVE_VERSION))
-            {
-                string[] strIntegrityCheckSplit = encrypdata.Split("|");
-                // 문자열 분리 결과가 3이 아니면 데이터 변조
-                if (strIntegrityCheckSplit.Length != 3)
-                {
-                    isCorrupted = true;
-                    Debug.LogWarning("데이터의 이상");
-                    return string.Empty;
-                }
-                else
-                {
-                    string hashString = $"{strIntegrityCheckSplit[0]}|{strIntegrityCheckSplit[1]}";
-                    string sha256Data = GetSha256String(hashString);
-                    // 무결설 검사
-                    if (strIntegrityCheckSplit[2].CompareTo(sha256Data)== 0)
-                    {
-                        data = DecryptData(strIntegrityCheckSplit[1]);
-                    }
-                    else
-                    {
-                        isCorrupted = true;
-                        Debug.LogWarning("데이터의 이상");
-                        return string.Empty;
-                    }
-                }
-            }
-            // 구 버전 대응
-            else if (encrypdata.StartsWith("{"))
-            {
-                data = encrypdata;
-                needEncrypt = true;
-            }
-            // 위 두개가 해당이 없다면 데이터가 유효하지 않음
-            else
-            {
-                isCorrupted = true;
-                Debug.LogWarning("데이터의 이상");
-                return string.Empty;
-            }
-
-        }
-        return data;
-    }
+    }  
 
     #endregion
 
@@ -437,187 +435,6 @@ public class DataManager : Singleton<DataManager>
 
     #endregion
 
-    #region MakeDefaultData
-
-    private PlayerData MakeDefaultPlayerData()
-    {
-        PlayerData playerData = new PlayerData();
-        //데이터 췍 (저장데이터가 있다면 해당 데이터, 아니라면 새로 생성)
-        // 기본 데이터 생성도 여기서 하면 되겠구만.
-        // 재료 데이터 추가
-        playerData.EndDay();
-        playerData.UpdateStar(10);
-        playerData.UpdateMoney(5000);
-        playerData.UpdateEndingState(Enums.PlayerEndingState.ContinuePlaying);
-        playerData.UpdateDayCycleState(Enums.PlayerDayCycleState.StartStore);
-        playerData.UpdateNeedHelp(false);
-        playerData.IsNotFirstPlay = false;
-        playerData.UpdateCompleteUpgradeTutorial(false);
-
-        var RiceFlour = GetDefaultData<IngredientInfoSO>("RiceFlour");
-        List<IngredientInfoData> list = playerData.GetInventory<IngredientInfoData>();
-        IngredientInfoData riceFlourData = new IngredientInfoData(RiceFlour, 10);
-        list.Add(riceFlourData);
-
-
-
-        //레시피 데이터 추가
-        var recipeDefaults = GetDefaultDataArray<RecipeInfoSO>();
-        var recipeList = playerData.GetInventory<RecipeInfoData>();
-        foreach (RecipeInfoSO recipe in recipeDefaults)
-        {
-            RecipeInfoData data = new RecipeInfoData(GetDefaultData<RecipeInfoSO>(recipe.name));
-            recipeList.Add(data);
-        }
-
-        recipeList.Sort((x, y) => x.DefaultData.ID - y.DefaultData.ID);
-        recipeList[0].Level = 1;
-
-
-        //주방기구 데이터 추가
-        var utensilDefaults = GetDefaultDataArray<KitchenUtensilInfoSO>();
-        var utensilList = playerData.GetInventory<KitchenUtensilInfoData>();
-
-        for (int i = 0; i < utensilDefaults.Length; i++)
-        {
-            KitchenUtensilInfoData data = new KitchenUtensilInfoData(utensilDefaults[i]);
-            utensilList.Add(data);
-            if (utensilDefaults[i].ID == 4 || utensilDefaults[i].ID == 1 || utensilDefaults[i].ID == 2)
-                data.Level = 0;
-        }
-
-        return playerData;
-    }
-
-    private MarketData MakeDefaultMarketData()
-    {            
-        IngredientInfoSO[] ingredientInfoSos = GetDefaultDataArray<IngredientInfoSO>();
-        MarketData marketSystem;
-        
-        marketSystem = new MarketData(ingredientInfoSos);
-
-        Dictionary<string, bool> isSellable = marketSystem.GetIsSellableDatas();
-        for (int i = 0; i < ingredientInfoSos.Length; i++)
-        {
-            isSellable.Add(ingredientInfoSos[i].name, false);
-        }
-
-        Dictionary<string, int> ingredientPrices = marketSystem.GetIngredientPrices();
-        for (int i = 0; i < ingredientInfoSos.Length; i++)
-        {
-            ingredientPrices.Add(ingredientInfoSos[i].name, ingredientInfoSos[i].BasePrice);
-        }
-
-        return marketSystem;
-    }
-
-    public void SaveGameSettings(GameSettingsData gameSettingsData)
-    {
-        this.gameSettingsData = gameSettingsData;
-        PlayerPrefs.SetFloat(Strings.Prefs.BGMVOLUME_KEY, gameSettingsData.BgmVolume);
-        PlayerPrefs.SetFloat(Strings.Prefs.EFFECTVOLUME_KEY, gameSettingsData.EffectVolume);
-        PlayerPrefs.SetInt(Strings.Prefs.TEXTUREQUALITY_KEY, (int)gameSettingsData.TextureQuality);
-        PlayerPrefs.SetInt(Strings.Prefs.FRAMERATE_KEY, gameSettingsData.Framerate);
-
-        PlayerPrefs.Save(); 
-    }
-
-    private DecoStoreData MakeDefaultDecoStoreData()
-    {
-        DecoStoreData decoStoreData;
-        StoreDecorationInfoSO[] dataSo = GetDefaultDataArray<StoreDecorationInfoSO>();
-        List<StoreDecorationInfoData> datas = new List<StoreDecorationInfoData>(dataSo.Length);
-        for (int i = 0; i < dataSo.Length; i++)
-        {
-            datas.Add(new StoreDecorationInfoData(dataSo[i]));
-        }
-        decoStoreData = new DecoStoreData(datas);
-        return decoStoreData;
-    }
-
-    #endregion
-
-    #region GameSettingSave
-
-    public GameSettingsData LoadGameSettings()
-    {
-        if (gameSettingsData != null)
-        {
-            return gameSettingsData;
-        }
-        if (!PlayerPrefs.HasKey(Strings.Prefs.BGMVOLUME_KEY))
-        {
-            SetDefaultGameSettings();
-        }
-        else
-        {
-            float bgmVolume = PlayerPrefs.GetFloat(Strings.Prefs.BGMVOLUME_KEY);
-            float effectVolume = PlayerPrefs.GetFloat(Strings.Prefs.EFFECTVOLUME_KEY);
-            int textureQuality = PlayerPrefs.GetInt(Strings.Prefs.TEXTUREQUALITY_KEY);
-            int framerate = PlayerPrefs.GetInt(Strings.Prefs.FRAMERATE_KEY);
-            gameSettingsData = new GameSettingsData(bgmVolume, effectVolume, (Enums.TextureQuality)textureQuality, framerate);
-        }
-
-        return gameSettingsData;
-    }
-
-    public void SetDefaultGameSettings()
-    {
-        float bgmVolume = 0.5f;
-        float effectVolume = 0.5f;
-        int textureQuality = 1;
-        int framerate = 30;
-
-        gameSettingsData = new GameSettingsData(bgmVolume, effectVolume, (Enums.TextureQuality)textureQuality, framerate);
-        PlayerPrefs.SetFloat(Strings.Prefs.BGMVOLUME_KEY, bgmVolume);
-        SoundManager.Instance.SetVolume(bgmVolume, Enums.AudioType.Bgm);
-        PlayerPrefs.SetFloat(Strings.Prefs.EFFECTVOLUME_KEY, effectVolume);
-        SoundManager.Instance.SetVolume(effectVolume, Enums.AudioType.Effect);
-        PlayerPrefs.SetInt(Strings.Prefs.TEXTUREQUALITY_KEY, textureQuality);
-        PlayerPrefs.SetInt(Strings.Prefs.FRAMERATE_KEY, framerate);
-        QualitySettings.globalTextureMipmapLimit = textureQuality;
-        Application.targetFrameRate = framerate;
-    }
-
-    #endregion
-
-    #region DeleteFile
-
-
-    public void DeletePlaySaveDataAll()
-    {
-        if (File.Exists(_playerDataSavePath))
-        {
-            File.Delete(_playerDataSavePath);
-        }
-        if (File.Exists(_marketDataSavePath))
-        {
-            File.Delete(_marketDataSavePath);
-        }
-        if (File.Exists(_decoStoreDataPath))
-        {
-            File.Delete(_decoStoreDataPath);
-        }
-        if (File.Exists(_effectsDataPath))
-        {
-            File.Delete(_effectsDataPath);
-        }
-        if (File.Exists(_newsDataPath))
-        {
-            File.Delete(_newsDataPath);
-        }
-
-        isCorrupted = false;
-        GameManager.Instance.EraseAllData();
-        EffectManager.Instance.EraseAllData();
-    }
-
-    public void DeleteDataAll()
-    {
-        DeletePlaySaveDataAll();
-        SetDefaultGameSettings();
-    }
-    #endregion
 
     #endregion
 }

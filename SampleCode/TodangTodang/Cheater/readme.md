@@ -2,8 +2,9 @@
 
 ## 개요
 
-다음은
+다음은 IMGUI를 이용해 개발한 Cheater의 코드입니다.
 
+<!--
 ## 결과 미리보기
 
 ### Cheater의 모습
@@ -21,14 +22,15 @@
 - 요약 이미지
     
     ![기술 고민 - 동균.png](Image/content4.png)
-    
+-->
+
 <br>
 
 ## 🎞 코드 
 
 | Script명 | 설명 |
 |---|---|
-|[Cheater.cs](./Cheater(#).cs)| IMGUI로 구현된 TodangTodang 데이터 조작 Cheater, 테스트에 활용하였습니다. |
+|[Cheater.cs](./Cheater.cs)| IMGUI로 구현된 TodangTodang 데이터 조작 Cheater, 테스트에 활용하였습니다. |
 
 
 ## [⏮ 돌아가기](../../)
