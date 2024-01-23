@@ -8,24 +8,18 @@
 
 ### 사용 예
 
+| 시간 조정 | 보유 소지금 변경 |
+|---|---|
+|![제목 없는 동영상 - Clipchamp로 제작 (7).gif](Image/content2.gif)| ![제목 없는 동영상 - Clipchamp로 제작 (5).gif](Image/content3.gif)|
+
+
 - 시간 조정
 
-![제목 없는 동영상 - Clipchamp로 제작 (7).gif](Image/content2.gif)
 
-- 보유 소지금 변경
 
-![제목 없는 동영상 - Clipchamp로 제작 (5).gif](Image/content3.gif)
 
-<br>
-<br>
-<br>
 
-## 개요
 
-- 빠른 테스트를 위해 추가한 Cheater에 관련된 설명입니다.
-- 사용 기술
-  - IMGUI
-  - EditorScript
 
 <br>
 
@@ -34,8 +28,17 @@
     ![기술 고민 - 동균.png](Image/content4.png)
     
 <br>
-<br>
 
+## 🎞 코드 
+
+| Script명 | 설명 |
+|---|---|
+|[DongsAI](./DongsAI.cs)| 5번째 스테이지에 적용된 보스 AI로 체력 별로 추가되는 동작이 있는 보스입니다.<br> Delegate 이벤트를 통해 HP소모 시 변화량을 체크, 페이즈 조건이 달성되면 <br> Coroutine, DialogTyper를 이용해 페이즈 전환을 하는 구조로 되어있습니다. |
+
+
+## [⏮ 돌아가기](../../)
+
+<!--
 ## ⚠️ **기술 도입 배경**
 
 - 테스트가 필요한 위치까지 도달하는 데에 **시간이 많이 소요**
@@ -163,3 +166,4 @@
     창 크기에 대한 Inspector를 계속 수정 해야하는 문제점 발생
 - 해결
     - #if UNITY_EDITOR의 전처리 구문을 추가하여, Cheater가 빌드에 영향을 주지 않도록 구현
+-->
