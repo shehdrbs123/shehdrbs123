@@ -1,5 +1,9 @@
 # [Cheater] IMGUI를 이용한 Cheater
 
+## 개요
+
+다음은
+
 ## 결과 미리보기
 
 ### Cheater의 모습
@@ -11,15 +15,6 @@
 | 시간 조정 | 보유 소지금 변경 |
 |---|---|
 |![제목 없는 동영상 - Clipchamp로 제작 (7).gif](Image/content2.gif)| ![제목 없는 동영상 - Clipchamp로 제작 (5).gif](Image/content3.gif)|
-
-
-- 시간 조정
-
-
-
-
-
-
 
 <br>
 
@@ -33,7 +28,7 @@
 
 | Script명 | 설명 |
 |---|---|
-|[DongsAI](./DongsAI.cs)| 5번째 스테이지에 적용된 보스 AI로 체력 별로 추가되는 동작이 있는 보스입니다.<br> Delegate 이벤트를 통해 HP소모 시 변화량을 체크, 페이즈 조건이 달성되면 <br> Coroutine, DialogTyper를 이용해 페이즈 전환을 하는 구조로 되어있습니다. |
+|[Cheater.cs](./Cheater(#).cs)| IMGUI로 구현된 TodangTodang 데이터 조작 Cheater, 테스트에 활용하였습니다. |
 
 
 ## [⏮ 돌아가기](../../)

@@ -5,7 +5,7 @@
 자체적으로 제작한 ObjectPool인 PrefabsPoolManager가 있습니다.
 
 
-![이미지]()
+<!-- ![이미지]()-->
 
 <br>
 
@@ -17,5 +17,6 @@
 |[ItemManager.cs](./ItemManager.cs) | ObjectPoolManager를 구현하여 Item을 관리하는 ObjectPool 입니다. |
 |[PrefabsPoolManager.cs](./PrefabsPoolManager.cs)| 자체적으로 제작한 프리팹 ObjectPool 코드입니다.|
 
+<br>
 
 ## [⏮ 돌아가기](../../)

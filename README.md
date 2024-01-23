@@ -86,7 +86,7 @@
     <td width="50%">Text RPG </td> 
 </tr>
 <tr >
-    <td> <image src=""/>  </td>
+    <td> <image src="Image/FindDeathMan.gif"/>  </td>
     <td> <image src="Image/TextRPG.gif"/>  </td>
 </tr>
 <tr >
