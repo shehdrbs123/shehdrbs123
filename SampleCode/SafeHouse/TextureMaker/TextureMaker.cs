@@ -17,7 +17,7 @@ public class TextureMaker : MonoBehaviour
         path = Path.Combine(directory, "Assets", "Artwork", "Textures");
         rTex = Cam.targetTexture;
     }
-    public void MakeTexture()
+    public void MakeTextureSeveralPrefab()
     {
         SetttingDefault();
         StartCoroutine(Making());
@@ -25,18 +25,18 @@ public class TextureMaker : MonoBehaviour
 
     private IEnumerator Making()
     {
-        GameObject[] obj = Resources.LoadAll<GameObject>(Path.Combine("", TargetPrefabsPath));
+        GameObject[] captureTargetPrefabs = Resources.LoadAll<GameObject>(Path.Combine("", TargetPrefabsPath));
 
-        foreach (var ob in obj)
+        foreach (var captureTargetPrefab in captureTargetPrefabs)
         {
-            GameObject copyedObj = Instantiate(ob);
-            ob.transform.position = Vector3.zero;
+            GameObject captureTargetObj = Instantiate(captureTargetPrefab);
+            captureTargetPrefab.transform.position = Vector3.zero;
 
             yield return new WaitForSeconds(0.5f);
             
             string imagePath = Path.Combine(path, $"Texture{Directory.GetFiles(path).Length}.png");
             SaveTexture(imagePath);
-            DestroyImmediate(copyedObj);
+            DestroyImmediate(captureTargetObj);
         }
     }
 

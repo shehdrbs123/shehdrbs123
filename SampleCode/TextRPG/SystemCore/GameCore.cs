@@ -1,0 +1,87 @@
+﻿using BasicTeamProject.Data;
+using System;
+namespace BasicTeamProject
+{
+    public class GameCore
+    {
+        private DataManager _manager;
+        private InputMemory _input;
+        private bool _isTest = false;
+        private bool _isGamePlay = true;
+
+        public GameCore()
+        {
+            _manager = DataManager.Instance;
+            _input = DataManager.Instance.InputMemory;
+            Console.SetWindowSize(Console.LargestWindowWidth/4,Console.LargestWindowHeight);
+            MusicPlayer mp = new MusicPlayer();
+            mp.Play();
+        }
+        public void Play(bool isTest)
+        {
+            _isTest = isTest;
+            SetDataDefault();
+            GamePlay();
+        }
+
+
+        private void SetDataDefault()
+        {
+            _manager.FunctionList = new List<string>();
+            if (!_isTest)
+            {
+                _manager.FunctionList.Add("CreateUserScene");
+            }
+            else
+            {
+                DataManager.Instance.Inventory.AddItem("낡은검", 1);
+                DataManager.Instance.Inventory.AddItem("낡은검", 1);
+                DataManager.Instance.Inventory.AddItem("낡은장갑", 1);
+                DataManager.Instance.Inventory.AddItem("낡은갑옷", 1);
+                DataManager.Instance.Inventory.AddItem("낡은투구", 1);
+                DataManager.Instance.Inventory.AddItem("겁내쎈무기", 2);
+                DataManager.Instance.Inventory.AddItem("똥", 100);
+                DataManager.Instance.Inventory.AddItem("작은회복약", 10);
+                DataManager.Instance.Inventory.AddItem("마나포션", 10);
+                _manager.FunctionList.Add("CreateUserScene");
+            }
+        }
+
+        private void GamePlay()
+        {
+            _manager.GetScene(_manager.FunctionList[0]).Execute();
+            while (IsPlay())
+            {
+                //입력 받기
+                while (IsCanInput()&&!_input.TryGetKey(out _manager.InputMemory.PreInput))
+                {
+                    Console.WriteLine("잘못 입력하셨습니다");
+                    Console.Write(">>");
+                }
+                
+                Console.Clear();
+                //출력
+                _manager.GetScene(_manager.FunctionList[_manager.InputMemory.PreInput]).Execute();
+            }
+        }
+
+        private bool IsPlay()
+        {
+            return _isGamePlay;
+        }
+
+        private bool IsCanInput()
+        {
+            if (_manager.InputMemory.InputComplete)
+            {
+                _manager.InputMemory.InputComplete = false;
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+    }
+}

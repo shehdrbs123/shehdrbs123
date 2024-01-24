@@ -24,13 +24,3 @@ public abstract class Savable
         _dataManager.CancelRegistSaveData(this);
     }
 }
-
-public abstract class SaveData
-{
-    
-}
-
-public abstract class Param
-{
-    
-}
