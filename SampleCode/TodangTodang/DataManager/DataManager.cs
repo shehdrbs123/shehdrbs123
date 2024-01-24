@@ -277,6 +277,7 @@ public class DataManager : Singleton<DataManager>
                     }
                 }
             }
+            
             // 구 버전 대응
             else if (encrypdata.StartsWith("{"))
             {
