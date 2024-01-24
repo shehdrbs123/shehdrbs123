@@ -13,12 +13,12 @@
 ### 충돌 기능
 | Script명 | 설명 |
 |---|---|
-|[CollisionInteraction.cs](./Destoryer.cs)| 기능을 담은 추상 클래스로 Collisionable과 함께 충돌 시 기능에 대한 추상 메소드를 포함하는 클래스 |
-|[EffectApplyer.cs](./EffectApplyer.cs)| 충돌 시 자신이 가진 Effector Component를 실행 해 충돌 대상에게 효과를 적용하는 스크립트 |
-|[HitSounding.cs](./HitSounding.cs)| 충돌 시 충돌 소리를 재생하는 스크립트 |
-|[Print.cs](./Print.cs)| 테스트 용도로 충돌 시 Debug.Log를 남기는 스크립트|
-|[SelfDestory.cs](./SelfDestory.cs)| 충돌 시 자기 자신을 파괴하는 스크립트 |
-|[Shaker.cs](./Shaker.cs)| 충돌 시 Material을 변경하여 일정시간 충돌했음을 알리는 스크립트 |
+|[CollisionInteraction.cs](./Collision/CollisionInteraction.cs)| 기능을 담은 추상 클래스로 Collisionable과 함께 충돌 시 기능에 대한 추상 메소드를 포함하는 클래스 |
+|[EffectApplyer.cs](./Collision/EffectApplyer.cs)| 충돌 시 자신이 가진 Effector Component를 실행 해 충돌 대상에게 효과를 적용하는 스크립트 |
+|[HitSounding.cs](./Collision/HitSounding.cs)| 충돌 시 충돌 소리를 재생하는 스크립트 |
+|[Print.cs](./Collision/Print.cs)| 테스트 용도로 충돌 시 Debug.Log를 남기는 스크립트|
+|[SelfDestory.cs](./Collision/SelfDestroy.cs)| 충돌 시 자기 자신을 파괴하는 스크립트 |
+|[Shaker.cs](./Collision/Shaker.cs)| 충돌 시 Material을 변경하여 일정시간 충돌했음을 알리는 스크립트 |
 
 
 
@@ -27,9 +27,9 @@
 | Script명 | 설명 |
 |---|---|
 |[Effector.cs](./Item/Effector.cs)| EffectApplyer와 함께 쓰이며 EffectApplyer의 호출에 따라 ItemFunction들을 실행시키는 스크립트 |
-|[ItemFunction.cs](./ItemFunction.cs)| 아이템 기능의 추상메소드를 가지고 있는 추상 클래스 스크립트|
-|[BallMultiply.cs](./BallMultiply.cs)| 가지고 있는 무기의 개수를 2배로 늘려주는 아이템 스크립트 |
-|[HPHeal.cs](./HPHeal.cs)| 유저의 체력을 일정 수치 올려주는 아이템 스크립트 |
+|[ItemFunction.cs](./Item/ItemFunction.cs)| 아이템 기능의 추상메소드를 가지고 있는 추상 클래스 스크립트|
+|[BallMultiply.cs](./Item/BallMultiply.cs)| 가지고 있는 무기의 개수를 2배로 늘려주는 아이템 스크립트 |
+|[HPHeal.cs](./Item/HPHeal.cs)| 유저의 체력을 일정 수치 올려주는 아이템 스크립트 |
 
 <br>
 
