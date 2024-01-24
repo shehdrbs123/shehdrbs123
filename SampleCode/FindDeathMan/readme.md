@@ -5,8 +5,8 @@
 
 |목차|
 |---|
-|[ScriptableObject를 기능으로 활용하기](./ScriptableObjectFunction/)|
 |[ObjectPool 구현](./ObjectPool/)|
+|[ScriptableObject를 기능으로 활용하기](./ScriptableObjectFunction/)|
 |[충돌 통합 Component(feat. SO)](./IntegrateCollision/)|
 |[Phase 구현 보스 AI](./PhaseBossAI/)|
 |[Coroutine 및 Queue활용 DialogTyper](./DialogTyper/)|
