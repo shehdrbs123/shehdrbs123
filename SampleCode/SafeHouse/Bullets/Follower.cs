@@ -6,7 +6,6 @@ using Random = UnityEngine.Random;
 [RequireComponent(typeof(Rigidbody))]
 public class Follower : MonoBehaviour
 {
-    //[SerializeField] private float degreeDelta=0.5f;
     [SerializeField] private float adjustDirectionForce = 7f;
     
     private List<GameObject> targets;
@@ -33,7 +32,6 @@ public class Follower : MonoBehaviour
             if (target == null)
             {
                 _rigidBody.AddForce(Vector3.down*10f);
-                //gameObject.SetActive(false);
                 return;
             }
         }
