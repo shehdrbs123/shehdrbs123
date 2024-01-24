@@ -33,7 +33,8 @@ public class TurretThrowerAI : TurretAIBase
         _bulletMoveLine = GetComponent<LineRenderer>();
         _bulletMoveLine.positionCount = _positionCount;
     }
-    //이건 아까워서 남깁니다... 포물선 그려주는 부분.....(안써도 되긴하지만)
+    //테스트 코드 포물선 그려주는 부분
+#region Testcode
 #if UNITY_EDITOR
     protected override void FixedUpdate()
     {
@@ -55,6 +56,7 @@ public class TurretThrowerAI : TurretAIBase
         
     }
 #endif
+#endregion
     protected override bool OperateAttack()
     {
         if (isShotOk())
