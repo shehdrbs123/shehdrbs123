@@ -99,6 +99,7 @@ public class Cheater : MonoBehaviour
         int i = 0;
         scrollPosition = GUILayout.BeginScrollView(scrollPosition,innerMargin);
         
+        // GameScene에서의 시간변경 적용UI 체크 과정
         if (!ReferenceEquals(_gameOperator,null))
         {
             HorizontalTextFieldWithName("게임씬 시간 변경",ref currentTime);
@@ -108,12 +109,14 @@ public class Cheater : MonoBehaviour
                 _gameOperator.ChangeCurrentTime(float.Parse(currentTime));
             });
         }
-
+        
+        // 
         for (; i < _texts.Length; ++i)
         {
             HorizontalTextFieldWithName(_labels[i],ref _texts[i]);
         }
         HorizontalToggleWithName("프롤로그시청", ref isFirstStart);
+
 
         dayChange = EditorGUILayout.Foldout(dayChange, "홈씬 상황변경");
         if(dayChange)

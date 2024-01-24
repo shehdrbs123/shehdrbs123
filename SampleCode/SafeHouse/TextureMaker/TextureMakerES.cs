@@ -2,7 +2,7 @@ using UnityEditor;
 using UnityEngine;
 
 [CustomEditor(typeof(TextureMaker))]
-public class TextureMakeES : Editor
+public class TextureMakerES : Editor
 {
     private TextureMaker tx;
 
