@@ -16,7 +16,7 @@ public class GridPanelUI : BaseUI
     [SerializeField] private float EaseInTime;
     
     private string buttonUIName;
-    private GridPanelManager manager;
+    private GridPanelManager gridPanelManager;
     private List<GridButtonUI> buttons;
     private Vector3 defaultPosition;
     private Coroutine EaseInOutCoroutine;
@@ -27,10 +27,10 @@ public class GridPanelUI : BaseUI
 
     public void Init()
     {
-        if (manager == null)
+        if (gridPanelManager == null)
         {
             InitValues();
-            int count = manager.GetElementsCount(PanelType);
+            int count = gridPanelManager.GetElementsCount(PanelType);
             buttons = new List<GridButtonUI>(20);
             for (int i = 0; i < count; ++i)
             {
@@ -38,7 +38,7 @@ public class GridPanelUI : BaseUI
                     _uiManager = GameManager.Instance._uiManager;
                 GameObject obj = _uiManager.GetUIClone(buttonUIName);
                 GridButtonUI gridButtonUI = obj.GetComponent<GridButtonUI>();
-                gridButtonUI.Init(manager.GetData(PanelType,i),_contentPanel,EaseOutPanel,UpdateButtons);
+                gridButtonUI.Init(gridPanelManager.GetData(PanelType,i),_contentPanel,EaseOutPanel,UpdateButtons);
                 buttons.Add(gridButtonUI);
             }
         }
@@ -61,19 +61,19 @@ public class GridPanelUI : BaseUI
         switch (PanelType)
         {
             case GridPanelType.BuildCraft:
-                manager = GameManager.Instance._buildManager;
+                gridPanelManager = GameManager.Instance._buildManager;
                 buttonUIName = "BuildSttButtonUI";
-                manager.OnOperated += UpdateButtons;
+                gridPanelManager.OnOperated += UpdateButtons;
                 break;
             case GridPanelType.WaterCraft:
-                manager = GameManager.Instance._craftManager;
+                gridPanelManager = GameManager.Instance._craftManager;
                 buttonUIName = "CraftButtonUI";
-                manager.OnOperated += UpdateButtons;
+                gridPanelManager.OnOperated += UpdateButtons;
                 break;
             case GridPanelType.FoodCraft :
-                manager = GameManager.Instance._craftManager;
+                gridPanelManager = GameManager.Instance._craftManager;
                 buttonUIName = "CraftButtonUI";
-                manager.OnOperated += UpdateButtons;
+                gridPanelManager.OnOperated += UpdateButtons;
                 break;
         }
     }

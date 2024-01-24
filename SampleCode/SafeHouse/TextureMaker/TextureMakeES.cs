@@ -17,7 +17,7 @@ public class TextureMakeES : Editor
         base.OnInspectorGUI();
         if (GUILayout.Button("TargetPrefabsPath 폴더 내 Texture 생성"))
         {
-            tx.MakeTexture();
+            tx.MakeTextureSeveralPrefab();
         }
 
         if (GUILayout.Button("현재 화면 Texture 생성"))

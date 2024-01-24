@@ -23,21 +23,6 @@ public class BuildManager : GridPanelManager
      public bool isBuildMode { get; private set; }
      private Camera _Camera;
 
-     
-     private void Awake()
-     {
-          buildDatas = Resources.LoadAll<BuildDataSO>("StructureData");
-     }
-
-     public BuildDataSO GetBuildData(GridPanelType type, int idx)
-     {
-          return buildDatas[idx];
-     }
-
-     public int GetBuildDataCount(GridPanelType type)
-     {
-          return buildDatas.Length;
-     }
 
      public void SetBuildMode(BuildDataSO data)
      {
@@ -67,8 +52,7 @@ public class BuildManager : GridPanelManager
           {
                Ray lay = _Camera.ScreenPointToRay(new Vector3(Screen.width * .5f, Screen.height * .5f));
                RaycastHit hit;
-               if (Physics.Raycast(lay,out hit, canBuildRange, BuildLayer) && 
-                   !((1<<hit.collider.gameObject.layer) == BuildIgnoreLayer) )
+               if (Physics.Raycast(lay,out hit, canBuildRange, BuildLayer) &&  !((1<<hit.collider.gameObject.layer) == BuildIgnoreLayer) )
                {
                     buildObj.SetActive(true);
                     buildObj.transform.position = hit.point;
@@ -138,16 +122,6 @@ public class BuildManager : GridPanelManager
                eulerAngle.y -= rotateSpeed*Time.deltaTime;
 
           buildObj.transform.eulerAngles = eulerAngle;
-     }
-
-     public override int GetElementsCount(GridPanelType type)
-     {
-          return GetBuildDataCount(type);
-     }
-
-     public override ScriptableObject GetData(GridPanelType type,int idx)
-     {
-          return GetBuildData(type,idx);
      }
 
      private bool CheckRightPlace(GameObject buildObj)
