@@ -74,7 +74,12 @@ public class TurretThrowerAI : TurretAIBase
         GameObject bullet = _prefabManager.SpawnFromPool(bulletType);
         bullet.transform.SetPositionAndRotation(_shotPos.position,transform.rotation);
         bullet.SetActive(true);
-        bullet.GetComponent<Rigidbody>().AddForce(_shotPos.forward*_bulletSpeed,ForceMode.VelocityChange);
+        
+        if (bullet.TryGetComponent(out Rigidbody rigidbody))
+        {
+            rigidbody.AddForce(_shotPos.forward*_bulletSpeed,ForceMode.VelocityChange);
+        }
+        Assert.IsNull(rigidbody,"rigidbody == null");
         
         SoundManager.PlayRandomClip( _data._shotSound,transform.position);
         
@@ -84,7 +89,7 @@ public class TurretThrowerAI : TurretAIBase
     protected override void LookAtEnemy()
     { 
        _targetDistance = _enemys[0].transform.position - _head.position; 
-       _targetDistance = new Vector3(_targetDistance.x, 0, _targetDistance.z);
+       _targetDistance.y = 0;
        RotateBody();
        SightAlign();
     }

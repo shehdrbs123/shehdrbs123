@@ -17,6 +17,7 @@ public class RangeDraw : MonoBehaviour
 
     private void Update()
     {
+        // 극좌표를 활용하여 원형의 공격 범위를 그릴 수 있도록 하였습니다.
         for (int i = 0; i < vertexCount+1; i++)
         {
             float angle = i * (360f / vertexCount);
