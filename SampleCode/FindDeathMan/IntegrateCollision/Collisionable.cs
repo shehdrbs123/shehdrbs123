@@ -38,4 +38,14 @@ public class Collisionable : PooledObject
             interaction.ExitCollsion(gameObject,other.gameObject);
         }
     }
+
+    public virtual void AddRequireComponent(GameObject Owner)
+    {
+       
+    }
+
+    public virtual Component GetRemoveComponent(GameObject Owner)
+    {
+        return null;
+    }
 }

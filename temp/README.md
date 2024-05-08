@@ -7,6 +7,66 @@
 
 ## [코드 샘플 보기](/SampleCode/)
 
+## Working
+
+<table>
+<tr >
+    <td width="50%">NuProject </td> 
+    <td width="50%">ProjectN </td> 
+</tr>
+<tr >
+    <td></td>
+    <td></td>
+</tr>
+<tr >
+    <td>Mobile</td> 
+    <td>Windows </td> 
+</tr>
+<tr >
+    <td> 4인 / 2024.3 ~ 진행 중</td>
+    <td> 2인 / 2024.1 ~ 진행 중</td>
+</tr>
+<tr >
+    <td>C# / Unity 2022.3.2f1 / Rider 2023.1.2</td>
+    <td>C# / Unity 2022.3.2f1 / Rider 2023.1.2</td>
+</tr>
+<tr>
+    <td>
+        몬스터 수집형 액션 RPG
+    </td>
+    <td>
+        동물 3D 농장 시뮬레이션
+    </td>
+</tr>
+<tr>
+    <td>
+        - UI 전반 <br>
+        - Inventory 
+    </td>
+    <td>
+        - 젠킨스 연동 <br>
+        - 플레이어, 몬스터 시스템 통합구현 <br>
+        - GridSystem 구현 <br>
+        - 도구 사용 시스템 구현 <br>
+    </td>
+</tr>
+<tr>
+    <td>
+        프로그램 다운로드 <br>
+    </td>
+    <td>
+        프로그램 다운로드 <br>
+    </td>
+</tr>
+<tr>
+    <td>
+    </td>
+    <td>
+    </td>
+</tr>
+</table>
+
+
 ## Work On Project
 
 <table>
@@ -59,7 +119,7 @@
     <td>
         프로그램 다운로드 <br>
         <a href="https://play.google.com/store/apps/details?id=com.twelveganzi.todangtodang&hl=ko-KR">안드로이드</a> <br>
-        <a href="https://twelveganzi.itch.io/todangtodang">itch.io (WEB)</a> <br> (주의) web최적화가 되어있지 않음 
+        <a href="https://twelveganzi.itch.io/todangtodang">itch.io (WEB)</a>
     </td>
     <td>
         프로그램 다운로드 <br>
@@ -68,11 +128,11 @@
 </tr>
 <tr>
     <td>
-        <a href="https://github.com/shehdrbs123/shehdrbs123/tree/main/SampleCode/TodangTodang">샘플코드</a><br>
+        <a href="https://github.com/TodangTodang/TodangTodangPublic">팀 Github</a><br>
         <!-- <a>개인 코드정리 github</a> -->
     </td>
     <td>
-        <a href="https://github.com/shehdrbs123/shehdrbs123/tree/main/SampleCode/SafeHouse">샘플코드</a><br>
+        <a href="https://github.com/shehdrbs123/SkilledUnityB11TeamProject">팀 Github</a><br>
         <!-- <a>개인 코드정리 github</a> -->
     </td>
 </tr>
@@ -135,11 +195,11 @@
 </tr>
 <tr>
     <td>
-        <a href="https://github.com/shehdrbs123/shehdrbs123/tree/main/SampleCode/FindDeathMan">샘플코드</a><br>
+        <a href="https://github.com/shehdrbs123/TeamProjectB04">팀 Github</a><br>
         <!-- <a href="">개인 코드정리 github</a> -->
     </td>
     <td>
-        <a href ="https://github.com/shehdrbs123/shehdrbs123/tree/main/SampleCode/TextRPG">샘플코드</a><br>
+        <a href ="https://github.com/shehdrbs123/SpartaB06_RawMeat">팀 Github</a><br>
         <!-- <a>개인 코드정리 github</a> -->
     </td>
 </tr>
