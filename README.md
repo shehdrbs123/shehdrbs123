@@ -42,7 +42,7 @@
     <td>
         - SO 데이터 컨테이너 및 Save/Load/암호화/무결성검증<br>&nbsp; 기능이 있는 DataManager 구현<br>
         - IMGUI를 이용해 빠른 테스트를 하기 위한 Cheater 개발<br>
-        - ScriptableObject, EditorScripting을 통한 손님 외관 설정 기능 개발<br>
+        - ScriptableObject, EditorScripting를 이용하여 DDP를 구현하여 <br>&nbsp;손님 외관 데이터 확장성 재고<br>
         - 크로스 플랫폼 빌드를 위한 전처리 및 빌드, 게시<br>&nbsp;(Web, PC, 모바일)<br>
         - 손님 생명주기 설계/상태머신을 이용한 손님 기능구현<br>
         - 게임의 기획 분석을 위한 Firebase Analytics연동<br>
@@ -115,14 +115,16 @@
 <tr>
     <td>
         - ObjectPool 구현 및 적용<br>
-        - ScriptableObject을 기능으로 활용해 몬스터/아이템 제작<br>
+        - 충돌 component 통합 및 SO 활용 DDP 구현<br>
+        - ScriptableObject을 기능클래스로 활용해 몬스터/아이템 제작<br>
         - Layer Collision Matrix 충돌 필터링<br>
+        - Coroutine 활용 보스 Typing Dialog 구현
         - 페이즈 시스템 보스 구현
     </td>
     <td>
-        - 게임 시스템 제작<br>
+        - 게임 코어 설계/구현<br>
         - CSV 형식의 데이터 파싱 및 처리<br>
-        - c# 리플렉션을 활용한 SceneManager<br>
+        - c# 리플렉션과 TemplateMethod 패턴을 활용한 SceneManager<br>
     </td>
 </tr>
 <tr>

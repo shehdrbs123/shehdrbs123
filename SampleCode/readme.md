@@ -20,7 +20,8 @@
 |---|
 |[UIManager의 UI 관리](/SampleCode/SafeHouse/UIManager/)|
 |[이미지화 툴(TextureMaker)](/SampleCode/SafeHouse/TextureMaker/)|
-|[추상 클래스를 이용한 방어시설과 BuildManager](/SampleCode/SafeHouse/Turret,BuildManager/)|
+|[BuildManager](/SampleCode/SafeHouse/BuildManager/)|
+|[방어시설](/SampleCode/SafeHouse/Turret/)|
 |[방어시설 무기](/SampleCode/SafeHouse/Bullets/)|
 |[New InputSystem Player](/SampleCode/SafeHouse/Player/)|
 |[제작 시스템](/SampleCode/SafeHouse/CraftManager/)|
