@@ -102,9 +102,9 @@ public class CustomerGenerator : MonoBehaviour
         MakeAvailableFoodTeaList(_foods,_teas);
         
         _dataSO = dataManager.GetDefaultData<CustomerDataSO>(Strings.DefaultDataName.CUSTOMER_DATA_SO);
-    #if UNITY_EDITOR
+#if UNITY_EDITOR
         DebugUtil.AssertNullException(_dataSO,nameof(_dataSO));
-    #endif
+#endif
         _customerDecoDataSo = dataManager.GetDefaultDataArray<CustomerDecoDataSO>();
 #if UNITY_EDITOR
         DebugUtil.AssertNullException(_customerDecoDataSo != null,nameof(_customerDecoDataSo));

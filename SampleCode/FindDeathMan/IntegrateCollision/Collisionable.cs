@@ -38,4 +38,9 @@ public class Collisionable : PooledObject
             interaction.ExitCollsion(gameObject,other.gameObject);
         }
     }
+
+    private void OnValidate()
+    {
+        
+    }
 }

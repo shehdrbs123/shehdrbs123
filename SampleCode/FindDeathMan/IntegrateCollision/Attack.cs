@@ -9,21 +9,10 @@ public class Attack : CollisionInteraction
     
     public override void EnterCollsion(GameObject Owner, GameObject target)
     {
-        if(Owner.TryGetComponent(out Weapon weapon)
+        if(Owner.TryGetComponent(out Weapon weapon) && )LayerMask.NameToLayer(weapon.owner) != target.layer 
         {
-        
-            if (LayerMask.NameToLayer(weapon.owner) != target.layer)
-            {
-                Health health = target.GetComponent<Health>();
-                Animator animator = target.GetComponentInChildren<Animator>();
-                if(animator && animator.runtimeAnimatorController)
-                    animator.SetTrigger("Hit");
-                int damage = weapon.Damage; 
-                if (health != null)
-                {
-                    health.AddHealth(-damage);
-                }
-            }
+            if (target.TryGetComponent(out Health health))
+                health.AddHealth(weapon.Damage);
         }
     }
 

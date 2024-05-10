@@ -59,7 +59,7 @@
     <td>
         프로그램 다운로드 <br>
         <a href="https://play.google.com/store/apps/details?id=com.twelveganzi.todangtodang&hl=ko-KR">안드로이드</a> <br>
-        <a href="https://twelveganzi.itch.io/todangtodang">itch.io (WEB)</a>
+        <a href="https://twelveganzi.itch.io/todangtodang">itch.io (WEB)</a> <br> (주의) web최적화가 되어있지 않음 
     </td>
     <td>
         프로그램 다운로드 <br>
@@ -68,11 +68,11 @@
 </tr>
 <tr>
     <td>
-        <a href="https://github.com/TodangTodang/TodangTodangPublic">팀 Github</a><br>
+        <a href="https://github.com/shehdrbs123/shehdrbs123/tree/main/SampleCode/TodangTodang">샘플코드</a><br>
         <!-- <a>개인 코드정리 github</a> -->
     </td>
     <td>
-        <a href="https://github.com/shehdrbs123/SkilledUnityB11TeamProject">팀 Github</a><br>
+        <a href="https://github.com/shehdrbs123/shehdrbs123/tree/main/SampleCode/SafeHouse">샘플코드</a><br>
         <!-- <a>개인 코드정리 github</a> -->
     </td>
 </tr>
@@ -137,11 +137,11 @@
 </tr>
 <tr>
     <td>
-        <a href="https://github.com/shehdrbs123/TeamProjectB04">팀 Github</a><br>
+        <a href="https://github.com/shehdrbs123/shehdrbs123/tree/main/SampleCode/FindDeathMan">샘플코드</a><br>
         <!-- <a href="">개인 코드정리 github</a> -->
     </td>
     <td>
-        <a href ="https://github.com/shehdrbs123/SpartaB06_RawMeat">팀 Github</a><br>
+        <a href ="https://github.com/shehdrbs123/shehdrbs123/tree/main/SampleCode/TextRPG">샘플코드</a><br>
         <!-- <a>개인 코드정리 github</a> -->
     </td>
 </tr>
