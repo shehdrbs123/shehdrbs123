@@ -39,13 +39,8 @@ public class Collisionable : PooledObject
         }
     }
 
-    public virtual void AddRequireComponent(GameObject Owner)
+    private void OnValidate()
     {
-       
-    }
-
-    public virtual Component GetRemoveComponent(GameObject Owner)
-    {
-        return null;
+        
     }
 }
