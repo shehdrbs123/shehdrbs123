@@ -8,6 +8,15 @@
 
 ## 🎞 샘플코드 목록
 
+
+|망자를 찾아서|
+|---|
+|[ScriptableObject를 기능으로 활용하기](/SampleCode/FindDeathMan/ScriptableObjectFunction/)|
+|[충돌 통합 Component(feat. SO)](/SampleCode/FindDeathMan/IntegrateCollision/)|
+|[ObjectPool 구현](/SampleCode/FindDeathMan/ObjectPool/)|
+|[Phase 구현 보스 AI](/SampleCode/FindDeathMan/PhaseBossAI/)|
+|[Coroutine 및 Queue활용 DialogTyper](/SampleCode/FindDeathMan/DialogTyper/)|
+
 |토당토당 찰떡쿵|
 |---|
 |[옵저버패턴 활용 데이터 저장, 암호화/무결성 검증<br> 기능이 있는 DataManager](/SampleCode/TodangTodang/DataManager/)|
@@ -27,13 +36,6 @@
 |[제작 시스템](/SampleCode/SafeHouse/CraftManager/)|
 
 
-|망자를 찾아서|
-|---|
-|[ObjectPool 구현](/SampleCode/FindDeathMan/ObjectPool/)|
-|[ScriptableObject를 기능으로 활용하기](/SampleCode/FindDeathMan/ScriptableObjectFunction/)|
-|[충돌 통합 Component(feat. SO)](/SampleCode/FindDeathMan/IntegrateCollision/)|
-|[Phase 구현 보스 AI](/SampleCode/FindDeathMan/PhaseBossAI/)|
-|[Coroutine 및 Queue활용 DialogTyper](/SampleCode/FindDeathMan/DialogTyper/)|
 
 |Text RPG|
 |---|

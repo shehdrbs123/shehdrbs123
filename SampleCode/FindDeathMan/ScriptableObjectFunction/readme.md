@@ -1,6 +1,6 @@
 # 🔎 기능 Scriptable Object
 
-언리얼의 클래스 레퍼런스 기능을 유니티에 적용해 기능의 추가/삭제가 용이한 구조를 만들어 보고 싶었습니다.<br>
+유니티 실력에 상관없이 inspector의 조작만으로 에셋을 <br>
 그래서 Scriptable Object의 에셋화 기능을 이용하여 구현한 기능 Scriptable Object의 코드입니다.
 
 
@@ -14,11 +14,11 @@
 | Script명 | 설명 |
 |---|---|
 |[CollisionInteraction.cs](./Collision/CollisionInteraction.cs)| Scriptable Object를 상속하는 추상 클래스로 Collisionable에 포함되어<br>기능을 담당하는 클래스 |
-|[EffectApplyer.cs](./Collision/EffectApplyer.cs)| 충돌 시 자신이 가진 Effector Component를 실행 해 충돌 대상에게<br> 효과를 적용하는 스크립트 |
+|[EffectApplyer.cs](./Collision/EffectApplyer.cs)| 충돌 시 자신이 가진 Effector Component를 실행 해 충돌 대상에게<br> 효과를 적용하는 스크립트 (ex. 아이템) |
 |[HitSounding.cs](./Collision/HitSounding.cs)| 충돌 시 충돌 소리를 재생하는 스크립트 |
 |[Print.cs](./Collision/Print.cs)| 테스트 용도로 충돌 시 Debug.Log를 남기는 스크립트|
 |[SelfDestory.cs](./Collision/SelfDestroy.cs)| 충돌 시 자기 자신을 파괴하는 스크립트 |
-|[Shaker.cs](./Collision/Shaker.cs)| 충돌 시 Material을 변경하여 일정시간 충돌했음을 알리는 스크립트 |
+|[Shaker.cs](./Collision/Shaker.cs)| 충돌 시 Material을 변경하여 충돌했음을 알리는 스크립트 |
 
 
 
