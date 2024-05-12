@@ -4,6 +4,10 @@ using DefaultNamespace;
 using DefaultNamespace.Common;
 using UnityEngine;
 
+/// <summary>
+/// 실제 DialogTyper 사용 부분
+/// 엔딩 시 해당 string을 한글자씩 출력되어 엔딩이 표기됩니다.
+/// </summary>
 public class Scenario : MonoBehaviour
 {
     [SerializeField] private DialogTyper typer;

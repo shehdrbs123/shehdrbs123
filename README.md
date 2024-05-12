@@ -42,15 +42,16 @@
     <td>
         - SO 데이터 컨테이너 및 Save/Load/암호화/무결성검증<br>&nbsp; 기능이 있는 DataManager 구현<br>
         - IMGUI를 이용해 빠른 테스트를 하기 위한 Cheater 개발<br>
-        - ScriptableObject, EditorScripting를 이용하여 DDP를 구현하여 <br>&nbsp;손님 외관 데이터 확장성 재고<br>
+        - ScriptableObject, EditorScripting를 이용한 DDP를 구현<br>&nbsp;손님 외관 데이터 확장성 재고<br>
         - 크로스 플랫폼 빌드를 위한 전처리 및 빌드, 게시<br>&nbsp;(Web, PC, 모바일)<br>
         - 손님 생명주기 설계/상태머신을 이용한 손님 기능구현<br>
-        - 게임의 기획 분석을 위한 Firebase Analytics연동<br>
+        - 게임의 기획 분석을 위한 Firebase Analytics 연동<br>
     </td>
     <td>
-        - UIManager를 통한 UI 관리기능 및 제작시스템 구현<br>
-        - 추상클래스를 이용한 5종 방어시설, 무기 구현<br>
-        - Prefab 모습 Texture화 툴 개발<br>
+        - UIManager를 통한 UI 관리기능 구현<br>
+        - 건설 시스템
+        - 추상클래스와 수학적 계산을 이용한 5종 방어시설, 무기 구현<br>
+        - GameObject Texture화 툴 개발<br>
         - RenderTexture 활용한 미니맵 구현<br>
         - New InputSystem을 이용한 플레이어 개발 <br>
     </td>
