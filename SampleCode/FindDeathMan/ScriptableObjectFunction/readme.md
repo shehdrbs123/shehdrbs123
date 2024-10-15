@@ -25,7 +25,8 @@
 
 ### 아이템 기능
 아이템의 경우 게임 오브젝트에 Effector Component를 포함하고<br>
-Collisionable Component의 기능에 EffectApplyer를 포함하여 사용
+Collisionable Component의 기능에 EffectApplyer를 포함하여 사용하도록 설정<br>
+Effector를 통해 해당 대상에게 사용될 수 있도록 하였습니다.
 | Script명 | 설명 |
 |---|---|
 |[Effector.cs](./Item/Effector.cs)| EffectApplyer와 함께 쓰이며 EffectApplyer의 호출에 따라 ItemFunction들을 실행시키는 스크립트 |
@@ -34,5 +35,6 @@ Collisionable Component의 기능에 EffectApplyer를 포함하여 사용
 |[HPHeal.cs](./Item/HPHeal.cs)| 유저의 체력을 일정 수치 올려주는 아이템 스크립트 |
 
 <br>
+
 
 ## [⏮ 돌아가기](../../)
