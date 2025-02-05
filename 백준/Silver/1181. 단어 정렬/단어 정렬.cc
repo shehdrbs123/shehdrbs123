@@ -11,28 +11,35 @@ bool compare(string i, string j)
     return i.length() < j.length();
 }
 
+string strs[20001];
+// set으로 중복 체크, static 배열에 바로 넣기
 int main()
 {
     ios::sync_with_stdio(0);
     cin.tie(0);
     
     int num=0;
+    int strsLength = 0;
+    set<string> s{};
+
     cin >> num;
     cin.ignore();
     
-    set<string> s{};
     for(int i=0;i<num;++i)
     {
         string inputStr;
         getline(cin,inputStr);
-        s.emplace(inputStr);
+        if(s.emplace(inputStr).second)
+        {
+            strs[strsLength] = inputStr;    
+            ++strsLength;
+        }
     }
-    vector<string> v(s.begin(),s.end());
+
+    sort(strs,strs+strsLength,compare);
     
-    sort(v.begin(),v.end(),compare);
-    
-    for(string i : v)
+    for(int i=0;i<strsLength;++i)
     {
-        cout << i << '\n';
+        cout << strs[i] << '\n';
     }
 }
