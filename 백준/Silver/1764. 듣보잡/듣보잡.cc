@@ -1,5 +1,7 @@
 #include <iostream>
 #include <set>
+#include <vector>
+#include <algorithm>
 using namespace std;
 
 int main()
@@ -11,7 +13,7 @@ int main()
     string inputStr;
     
     set<string> compareSet{};
-    set<string> resultSet{};
+    vector<string> v{};
     
     cin >> N >> M;
     
@@ -25,11 +27,13 @@ int main()
     {
         cin >> inputStr;
         if(compareSet.find(inputStr) != compareSet.end())
-            resultSet.emplace(inputStr);
+            v.emplace_back(inputStr);
     }
+
+    sort(v.begin(),v.end(),less<string>());
     
-    cout << resultSet.size() << '\n';
-    for(string i : resultSet)
+    cout << v.size() << '\n';
+    for(string i : v)
     {
         cout << i << '\n';
     }
