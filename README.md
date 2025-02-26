@@ -43,9 +43,9 @@
         - 아웃게임 훈련 및 스테이지 선택 화면 구현 <br>
     </td>
     <td>
-        - ObjectPool 구현 및 적용<br>
         - 충돌 통합 적용 component 및 Layer Collision Matrix 충돌 필터링<br>
-        - ScriptableObject 이용 DDP Prefab 몬스터/아이템 제작 구조 설계<br>
+        - Data Driven 및 ScriptableObject 활용 Prefab 무기/몬스터 제작 시스템 개발<br>
+        - ObjectPool 구현 및 적용<br>
         - Coroutine 활용 보스 Typing Dialog 구현 <br>
         - 페이즈 시스템 보스 구현
     </td>
