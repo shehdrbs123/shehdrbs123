@@ -1,61 +1,51 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <stack>
 
 using namespace std;
-
-int s[10001]{};
-int pos = 0;
-
 
 int main()
 {
     ios::sync_with_stdio(0);
     cin.tie(0);
     
-    int N;
+    int num;
+    cin >> num;
     
-    cin >> N;
-    cin.ignore(1);
+    stack<int> s{};
     
-    
-    for(int i=0;i<N;++i)
+    for(int i=0;i<num;++i)
     {
-        string input;
-        getline(cin,input,'\n');
+        string action;
+        int num;
+        cin >> action;
         
-        stringstream ss1(input);
-        ss1 >> input;
-        if(input.compare("push")==0)
+        if(action == "push")
         {
-            int num;
-            ss1 >> num;
-            s[pos] = num;
-            ++pos;
-        }else if(input.compare("pop")==0)
+            cin >> num;
+            s.emplace(num);
+        }else if(action == "pop")
         {
             int num = -1;
-            if(pos>0)
+            if(!s.empty())
             {
-                --pos;
-                num = s[pos];
+                num = s.top(); s.pop();
             }
             cout << num << '\n';
-                
-        }else if(input.compare("top")==0)
+        }else if(action == "size")
+        {
+            cout << s.size() << '\n';
+        }else if(action == "empty")
+        {
+            int num = 0;
+            if(s.empty())
+                num = 1;
+            cout << num << '\n';   
+        }
+        else
         {
             int num = -1;
-            if(pos > 0)
-            {
-               num = s[pos-1];
-            }
-            cout << num << '\n';
-        }else if(input.compare("size")==0)
-        {
-            cout << pos << '\n';
-        }else if(input.compare("empty")==0)
-        {
-            int num = 1;
-            if(pos > 0)
-                num = 0;
+            if(!s.empty())
+                num = s.top();
             cout << num << '\n';
         }
     }
