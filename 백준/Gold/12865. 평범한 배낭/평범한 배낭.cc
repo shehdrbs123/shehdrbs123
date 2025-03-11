@@ -1,50 +1,70 @@
 #include <iostream>
 #include <vector>
+#include <cmath>
+#define WEIGHT first
+#define VALUE second
+
 using namespace std;
-int N,K;
 
 int dp[100001][101];
-
-void print()
-{
-    for(int i=0;i<=K;++i)
-    {
-        for(int j=0;j<=N;++j)
-        {
-            cout << dp[i][j] << ' ';
-        }
-        cout << '\n';
-    }
-}
-
 int main()
 {
     ios::sync_with_stdio(0);
     cin.tie(0);
     
+    int N,K;
     cin >> N >> K;
-    vector<pair<int,int>> v{};
-    v.reserve(N);
     
-    for(int i=0;i<N;++i)
+    vector<pair<int,int>> goods{};
+    goods.reserve(N+1);
+    goods.emplace_back(0,0);
+    
+    int minW=100001;
+    for(int i=1;i<=N;++i)
     {
-        int w,V;
-        cin >> w >> V;
-        v.emplace_back(w,V);
+        int w,v;
+        cin >> w >> v;
+        goods.emplace_back(w,v);
+        if(minW>w)
+            minW = w;
     }
+    
+    //dp 테이블 초기화
+    for(int i=0;i<minW;++i)
+    {
+        for(int j=0;j<N;++j)
+        {
+            dp[i][j] = 0;
+        }
+    }
+    
+    for(int i=0;i<K;++i)
+    {
+        dp[i][0] = 0;
+    }
+    
     int result = 0;
-    for(int i=1;i<=K;++i)
+    //dp 계산하기
+    for(int i=minW;i<=K;++i)
     {
         for(int j=1;j<=N;++j)
         {
-            dp[i][j] = dp[i][j-1];
-            int preweight = i - v[j-1].first;
-            if(preweight>=0)
+            auto g = goods[j];
+
+            if(i-g.WEIGHT < 0)
             {
-                int value = dp[preweight][j-1] + v[j-1].second;
-                dp[i][j] = max(dp[i][j],value);
+                dp[i][j] = dp[i][j-1];
+                continue;
             }
-            result = max(result,dp[i][j]);
+
+            int preDP = dp[i][j-1];
+            int insertDP = dp[i-g.WEIGHT][j-1]+g.VALUE;
+            
+            dp[i][j] = max(preDP,insertDP);
+            if(i==K)
+            {
+                result = max(result,dp[i][j]);
+            }
         }
     }
     
