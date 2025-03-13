@@ -1,38 +1,41 @@
-//#include <bits/stdc++.h>
 #include <iostream>
 #include <vector>
+#include <cmath>
 
 using namespace std;
 
+int dp[1001];
+int sequence[1001];
 int main()
 {
     ios::sync_with_stdio(0);
-    cin.tie(NULL);
+    cin.tie(0);
     
-    int size{};
-    vector<int> numbers(size);
-    vector<int> d(size);
-    cin >> size;
-    // 입력처리
-    for(int i=0;i<size;++i)
-    {
-        int num;
-        cin >> num;
-        numbers.emplace_back(num);
-    }
+    int N;
+    
+    cin >> N;
+    
 
-    int maxCount = -1;
-    for(int i=0;i<numbers.size();++i)
+
+    for(int i=0;i<N;++i)
     {
-        int count=0;
+        cin >> sequence[i];
+        dp[i] = 1;
+    }
+        
+    int result = 1;
+
+    for(int i=1;i<N;++i)
+    {
         for(int j=i-1;j>=0;--j)
         {
-            if(numbers[i] > numbers[j] && count<d[j])
-                count = d[j];
+            if(sequence[i] > sequence[j])
+            {
+                dp[i] = max(dp[i],dp[j]+1);
+            }
         }
-        d.emplace_back(count+1);
-        maxCount = max(count+1,maxCount);
+        result = max(dp[i],result);
     }
     
-    cout << maxCount;
+    cout << result;
 }
